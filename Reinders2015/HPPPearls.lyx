@@ -1,0 +1,1845 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 1cm
+\rightmargin 1cm
+\bottommargin 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+Conventions used throughout: text to be 
+\strikeout on
+\color red
+removed
+\strikeout default
+\color inherit
+, 
+\series bold
+closely inspected
+\series default
+, and 
+\color green
+added
+\color inherit
+.
+\end_layout
+
+\begin_layout Subsection*
+Page 30
+\end_layout
+
+\begin_layout Quote
+Memo
+\strikeout on
+\color red
+r
+\strikeout default
+\color inherit
+ization
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+
+\series bold
+Division
+\series default
+ and transcendental math functions are expensive--even when directly supported
+ by the instruction set, they generally have latencies that are 1-2 orders
+ of magnitude higher than multiplication and 
+\series bold
+division
+\series default
+.
+\end_layout
+
+\begin_layout Subsection*
+Page 72
+\end_layout
+
+\begin_layout Quote
+In particular, two items highlighted in 
+\series bold
+pink
+\end_layout
+
+\begin_layout Standard
+The plots are in black-and-white.
+\end_layout
+
+\begin_layout Subsection*
+Page 73
+\end_layout
+
+\begin_layout Quote
+We used VTune Amplifier to 
+\series bold
+\color black
+root cause
+\series default
+\color inherit
+ this unexpected result...
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+
+\shape italic
+\strikeout on
+\color red
+V
+\strikeout default
+\color inherit
+vmlinux
+\shape default
+ time ballooned due to multiple dynamic...
+\end_layout
+
+\begin_layout Subsection*
+Page 83
+\end_layout
+
+\begin_layout Quote
+-opt-stream-store
+\color green
+=
+\color inherit
+always
+\end_layout
+
+\begin_layout Subsection*
+Page 87
+\end_layout
+
+\begin_layout Quote
+...whereas we will show the revised code running on 60 core
+\strikeout on
+\color red
+s
+\strikeout default
+\color inherit
+.
+\end_layout
+
+\begin_layout Subsection*
+Page 92
+\end_layout
+
+\begin_layout Quote
+Additionally, the [c-1] and [c+
+\color green
+1
+\color inherit
+] references will be in cache.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+Due to vectors along Z, 
+\series bold
+into page
+\series default
+, multiple cells...
+\end_layout
+
+\begin_layout Standard
+This disagrees with the last sentence of the second paragraph on the page:
+\end_layout
+
+\begin_layout Quote
+Looking down the X direction (as viewed from Z/Y plane)...
+ is illustrated in Figure 5.4 ...
+\end_layout
+
+\begin_layout Subsection*
+Page 96
+\end_layout
+
+\begin_layout Quote
+Furthermore, the small model improvement was not as anticipated.
+ ...
+ The improvement to the small model looks good;
+\end_layout
+
+\begin_layout Standard
+This is confusing.
+ The improvement to the small model was less than that of the large model,
+ yet the author says the small model results are good and then goes on to
+ say the large model results need to be fixed.
+\end_layout
+
+\begin_layout Subsection*
+Page 100
+\end_layout
+
+\begin_layout Quote
+
+\strikeout on
+\color red
+parallel pipette
+\strikeout default
+\color inherit
+ 
+\color green
+parallelepiped
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+This means that the preamble and postamble codes for unaligned loops 
+\series bold
+can
+\series default
+ be bypassed, and that the elements x=1:15 
+\strikeout on
+\color red
+could
+\strikeout default
+\color inherit
+ 
+\color green
+can
+\color inherit
+ be directly processed...
+\end_layout
+
+\begin_layout Subsection*
+Page 105
+\end_layout
+
+\begin_layout Quote
+Where
+\strikeout on
+\color red
+,
+\strikeout default
+\color inherit
+ the white cells are the yet...
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+Where
+\strikeout on
+\color red
+,
+\strikeout default
+\color inherit
+ one of the threads, t1 of the first core, has yet to begin performing its
+ work
+\strikeout on
+\color red
+,
+\strikeout default
+\color inherit
+ when the first thread, t3 of second core, reaches the barrier.
+\end_layout
+
+\begin_layout Standard
+This is not a sentence.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+The O/S may be doing some housekeeping
+\color green
+,
+\color inherit
+ too.
+\end_layout
+
+\begin_layout Standard
+The entire section 
+\shape italic
+The Plesiochronous Phasing Barrier
+\shape default
+ has substantial grammar and structure issues.
+ Most of the paragraphs are single sentences and comma usage is inconsistent--
+ making it hard to follow and understand.
+\end_layout
+
+\begin_layout Subsection*
+Page 118
+\end_layout
+
+\begin_layout Quote
+Systems, in turn
+\strikeout on
+\color red
+s
+\strikeout default
+\color inherit
+, comprise these individual components.
+\end_layout
+
+\begin_layout Subsection*
+Page 134
+\end_layout
+
+\begin_layout Quote
+The ANN essentially teaches itself 
+\color green
+to
+\color inherit
+ find the linear or nonlinear principle...
+\end_layout
+
+\begin_layout Subsection*
+Page 136
+\end_layout
+
+\begin_layout Quote
+The principle advantage of this sigmoid is that we know the exact number
+ 
+\color green
+of
+\color inherit
+ floating-point operations.
+\end_layout
+
+\begin_layout Subsection*
+Page 138
+\end_layout
+
+\begin_layout Standard
+All of the underscores in Figure 7.11 have been replaced with spaces.
+ The formatting appears to be a bit off, as well.
+\end_layout
+
+\begin_layout Subsection*
+Page 141
+\end_layout
+
+\begin_layout Quote
+As previously discussed, near-linear scaling and PF/s performance...
+ on the TACC Stampede supercomputer (see Figure 7.
+\strikeout on
+\color red
+3
+\strikeout default
+\color green
+6
+\color inherit
+).
+\end_layout
+
+\begin_layout Subsection*
+Page 151
+\end_layout
+
+\begin_layout Standard
+Caption for Figure 8.7:
+\end_layout
+
+\begin_layout Quote
+The 
+\series bold
+red
+\series default
+ elements are padding...
+\end_layout
+
+\begin_layout Standard
+The figure is in black-and-white.
+\end_layout
+
+\begin_layout Subsection*
+Page 165
+\end_layout
+
+\begin_layout Standard
+Figure 9.9 is very hard to read.
+ It seems the original plots were in color, but the hues did not transfer
+ to black-and-white very well.
+ This is a general problem with the plots in this chapter.
+\end_layout
+
+\begin_layout Subsection*
+Page 168
+\end_layout
+
+\begin_layout Quote
+With all this in mind, we need to choose a maximum tiling factor of 2688
+ for 
+\strikeout on
+\color red
+B
+\strikeout default
+\color green
+F
+\color inherit
+ in SP, or half of that in DP.
+\end_layout
+
+\begin_layout Subsection*
+Page 170
+\end_layout
+
+\begin_layout Quote
+
+\shape italic
+BFI
+\shape default
+ is computed such 
+\strikeout on
+\color red
+as
+\strikeout default
+\color inherit
+ that all threads have only one iteration in the 
+\shape italic
+ii
+\shape default
+-loop
+\strikeout on
+\color red
+,
+\strikeout default
+\color inherit
+ and 
+\strikeout on
+\color red
+to be
+\strikeout default
+\color inherit
+ 
+\color green
+are
+\color inherit
+ cache
+\color green
+-
+\strikeout on
+\color red
+ line 
+\strikeout default
+\color inherit
+aligned which improves...
+\end_layout
+
+\begin_layout Subsection*
+Page 173
+\end_layout
+
+\begin_layout Standard
+Caption for Figure 9.20:
+\end_layout
+
+\begin_layout Quote
+
+\strikeout on
+\color red
+Double
+\strikeout default
+\color inherit
+ 
+\color green
+Single
+\color inherit
+ precision performance of the different optimization steps.
+\end_layout
+
+\begin_layout Subsection*
+Page 174
+\end_layout
+
+\begin_layout Quote
+These optimizations increased the maximum performance 
+\strikeout on
+\color red
+of
+\strikeout default
+\color inherit
+ 
+\color green
+from
+\color inherit
+ 52.7...
+ to 
+\strikeout on
+\color red
+maximum performance of 
+\strikeout default
+\color inherit
+76.3...
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+The final optimized version of the code obtained 
+\strikeout on
+\color red
+an
+\strikeout default
+\color inherit
+ 89% of the upper bound...
+\end_layout
+
+\begin_layout Subsection*
+Page 177
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
+P
+\shape default
+ is used without being defined.
+ I think it is the number of processors.
+\end_layout
+
+\begin_layout Subsection*
+Page 178
+\end_layout
+
+\begin_layout Quote
+To be more specific, it tells the compiler to explicitly...
+ and 
+\strikeout on
+\color red
+also
+\strikeout default
+\color inherit
+ the loop to be vectorized...
+\end_layout
+
+\begin_layout Subsection*
+Page 179
+\end_layout
+
+\begin_layout Quote
+Figure 10.
+\strikeout on
+\color red
+1
+\strikeout default
+\color green
+4
+\color inherit
+ shows the comparison against the processor and coprocessor with directives
+ and with intrinsics.
+\end_layout
+
+\begin_layout Subsection*
+Page 180
+\end_layout
+
+\begin_layout Quote
+The legends 
+\begin_inset Quotes eld
+\end_inset
+
+-mavx+pragma,
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Quotes eld
+\end_inset
+
+_mm256,
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Quotes eld
+\end_inset
+
+-mmic+pagma,
+\begin_inset Quotes erd
+\end_inset
+
+...
+\end_layout
+
+\begin_layout Standard
+These descriptions do not match those used in the figure (Figure 10.4).
+\end_layout
+
+\begin_layout Subsection*
+Page 182
+\end_layout
+
+\begin_layout Standard
+A more detailed discussion of the performance differences in Figure 10.6
+ would be very helpful.
+ For example, are we memory bound? Are there too many registers in flight?
+ Are there prefetching issues?
+\end_layout
+
+\begin_layout Subsection*
+Page 188
+\end_layout
+
+\begin_layout Quote
+...
+ and 
+\begin_inset Formula ${\rm u}_{ij}$
+\end_inset
+
+ is the unit
+\strikeout on
+\color red
+ary
+\strikeout default
+\color inherit
+ vector between particles 
+\begin_inset Formula $i$
+\end_inset
+
+ and 
+\begin_inset Formula $j$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+Page 216
+\end_layout
+
+\begin_layout Quote
+If we would not do this, for example
+\strikeout on
+\color red
+,
+\strikeout default
+\color inherit
+ for the 
+\strikeout on
+\color red
+attribute
+\strikeout default
+\color inherit
+ 
+\color green
+member variable
+\color inherit
+ 
+\family typewriter
+position
+\family default
+...
+\end_layout
+
+\begin_layout Standard
+In C++, variables contained in a class are referred to as member variables
+ rather than attributes.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+For the local copy
+\color green
+,
+\color inherit
+ the offload runtime then can create...
+\end_layout
+
+\begin_layout Subsection*
+Page 217
+\end_layout
+
+\begin_layout Standard
+Figure 12.13: There are several instances of 
+\shape italic
+position
+\shape default
+ spelled incorrectly.
+\end_layout
+
+\begin_layout Subsection*
+Page 218
+\end_layout
+
+\begin_layout Quote
+Figure 12.15: In C++, identifiers beginning with a double underscore are
+ reserved by the implementation for any use (see Section 2.10.3.1).
+\end_layout
+
+\begin_layout Subsection*
+Page 222
+\end_layout
+
+\begin_layout Quote
+For 
+\family typewriter
+dgemm
+\family default
+...
+ the observation is
+\strikeout on
+\color red
+,
+\strikeout default
+\color inherit
+ that the overall compute performance...
+\end_layout
+
+\begin_layout Subsection*
+Page 223
+\end_layout
+
+\begin_layout Quote
+Applications that display a similar scaling behavior like our PD example
+\color red
+,
+\color inherit
+ can use our approach...
+\end_layout
+
+\begin_layout Subsection*
+Page 227
+\end_layout
+
+\begin_layout Quote
+Each coprocessor and graphics device 
+\strikeout on
+\color red
+have
+\strikeout default
+\color inherit
+ 
+\color green
+has
+\color inherit
+ its own memory...
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+However, for applications in scientific domains that communicate between
+ neighbors
+\strikeout on
+\color red
+,
+\strikeout default
+\color inherit
+ or aggregate communication...
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+In systems with a coprocessor, it is more likely...
+ on the coprocess
+\strikeout on
+\color red
+,
+\strikeout default
+\color inherit
+ the OpenMP parallel...
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+Unless you have an architecture diagram of a node
+\color green
+,
+\color inherit
+ there isn't much...
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+
+\strikeout on
+\color red
+First, t
+\family typewriter
+\color green
+T
+\family default
+\strikeout default
+\color inherit
+he two containers labeled Socket P#0...
+\end_layout
+
+\begin_layout Standard
+There is never a 
+\begin_inset Quotes eld
+\end_inset
+
+second.
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+In 
+\strikeout on
+\color red
+numa
+\strikeout default
+\color inherit
+ 
+\color green
+NUMA
+\color inherit
+ parlance, a NUMA 
+\begin_inset Quotes eld
+\end_inset
+
+node
+\begin_inset Quotes erd
+\end_inset
+
+ is a...
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+Within a socket
+\color green
+,
+\color inherit
+ the cores are labeled as PU...
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+Figure 13.4 categorizes and illustrates ways that tasks (white 
+\series bold
+discs
+\series default
+ as possible...
+\end_layout
+
+\begin_layout Standard
+This is the British English spelling, but US English has been used throughout
+ the text, otherwise.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+As mentioned earlier, the Pure MPI...
+ amount of communication
+\strikeout on
+\color red
+,
+\strikeout default
+\color inherit
+ and the communication storage...
+\end_layout
+
+\begin_layout Subsection*
+Page 230
+\end_layout
+
+\begin_layout Quote
+...
+ setting I_MPI_PIN_DOMAIN=socket will 
+\strikeout on
+\color red
+i
+\strikeout default
+\color green
+e
+\color inherit
+nsure that tasks will be assigned...
+\end_layout
+
+\begin_layout Subsection*
+Page 231
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset Quotes eld
+\end_inset
+
+Mask element 2
+\begin_inset Quotes erd
+\end_inset
+
+ bitstring does not match the text.
+ The text says
+\end_layout
+
+\begin_layout Quote
+...
+ and rank 1 to run its threads on 0, 1, and 
+\series bold
+3
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+but the bitstring specifies 0, 1, and 
+\series bold
+2
+\series default
+.
+\end_layout
+
+\begin_layout Subsection*
+Page 233
+\end_layout
+
+\begin_layout Quote
+The proxy is enabled by default
+\strikeout on
+\color red
+,
+\strikeout default
+\color inherit
+ for internode communication...
+\end_layout
+
+\begin_layout Subsection*
+Page 237
+\end_layout
+
+\begin_layout Quote
+While the bindings selected by the Intel MPI library use hardware information
+\color green
+,
+\color inherit
+ 
+\strikeout on
+\color red
+and
+\strikeout default
+\color inherit
+ sensible distribution...
+\end_layout
+
+\begin_layout Subsection*
+Page 253
+\end_layout
+
+\begin_layout Quote
+We can have confidence 
+\strikeout on
+\color red
+o
+\strikeout default
+\color green
+i
+\color inherit
+n them.
+\end_layout
+
+\begin_layout Subsection*
+Page 256
+\end_layout
+
+\begin_layout Quote
+Beach is a Cray...
+ Cluster comprised 
+\color green
+of
+\color inherit
+ 48 compute...
+\end_layout
+
+\begin_layout Subsection*
+Page 257
+\end_layout
+
+\begin_layout Quote
+extending and customizing coprocessor
+\strikeout on
+\color red
+s
+\strikeout default
+\color inherit
+ installations...
+\end_layout
+
+\begin_layout Subsection*
+Page 309
+\end_layout
+
+\begin_layout Standard
+The superscript 
+\begin_inset Quotes eld
+\end_inset
+
+serial
+\begin_inset Quotes erd
+\end_inset
+
+ is misspelled.
+\end_layout
+
+\begin_layout Subsection*
+Page 310
+\end_layout
+
+\begin_layout Quote
+The OpenMP efficiency is very low for this benchmark, and it
+\strikeout on
+\color red
+'s
+\strikeout default
+\color inherit
+ relates...
+\end_layout
+
+\begin_layout Subsection*
+Page 311
+\end_layout
+
+\begin_layout Standard
+In Figure 18.3, the second argument to the second filter in the pipeline
+ is declared to take a 
+\family typewriter
+std::function
+\family default
+ that returns 
+\family typewriter
+void
+\family default
+, but the lambda is declared to return a 
+\family typewriter
+float
+\family default
+.
+ Because the only return value from this lambda is the value returned by
+ invoking the argument (which is declared to be 
+\family typewriter
+void
+\family default
+), this is undefined behavior.
+ It looks like the fix is just to remove the explicit trailing return type,
+ and just let the compiler deduce that the lambda returns 
+\family typewriter
+void
+\family default
+.
+\end_layout
+
+\begin_layout Subsection*
+Page 313
+\end_layout
+
+\begin_layout Quote
+A nice feature of the user-managed task arena...
+ running tasks
+\color green
+.
+
+\color inherit
+ After 
+\color green
+a
+\color inherit
+ task is submitted...
+\end_layout
+
+\begin_layout Subsection*
+Page 316
+\end_layout
+
+\begin_layout Quote
+When 
+\color green
+the
+\color inherit
+ number of groups is equal to a number of NUMA nodes and second level arena
+ workers...
+\end_layout
+
+\begin_layout Subsection*
+Page 327
+\end_layout
+
+\begin_layout Quote
+Using the keyword restrict in 
+\color green
+the
+\color inherit
+ declaration of 
+\color green
+pointer arguments in
+\color inherit
+ the formal parameters of 
+\color green
+the
+\color inherit
+ function...
+\end_layout
+
+\begin_layout Subsection*
+Page 330
+\end_layout
+
+\begin_layout Standard
+Figure 19.16: The digit separators are being mixed between a period and a
+ comma.
+\end_layout
+
+\begin_layout Subsection*
+Page 350
+\end_layout
+
+\begin_layout Standard
+The caption for Figure 21.2:
+\end_layout
+
+\begin_layout Quote
+At each hit point
+\color green
+,
+\color inherit
+ a secondary ray...
+\end_layout
+
+\begin_layout Subsection*
+Page 357
+\end_layout
+
+\begin_layout Standard
+Figure 21.9: The comparison of the Intel Xeon Phi 7120D against an off-the-shelf,
+ consumer-grade GPU like the NVIDIA GeForce GTX Titan is completely misguided.
+ The GeForce line is designed to run video games, not render photo-realistic
+ scenes with extremely complex lighting calculations.
+ The author should have used a Kepler Quadro or Tesla card for this comparison.
+\end_layout
+
+\begin_layout Subsection*
+Page 362
+\end_layout
+
+\begin_layout Standard
+Figure 22.3: The OpenCL library routines do not have an 
+\begin_inset Quotes eld
+\end_inset
+
+ocl
+\begin_inset Quotes erd
+\end_inset
+
+ prefix (they have no prefix).
+\end_layout
+
+\begin_layout Subsection*
+Page 364
+\end_layout
+
+\begin_layout Standard
+The OpenCL library routines do not have an 
+\begin_inset Quotes eld
+\end_inset
+
+ocl
+\begin_inset Quotes erd
+\end_inset
+
+ prefix (they have no prefix).
+\end_layout
+
+\begin_layout Subsection*
+Page 365
+\end_layout
+
+\begin_layout Quote
+In Figure 22.6b
+\color green
+,
+\color inherit
+ we show an example of these...
+\end_layout
+
+\begin_layout Subsection*
+Page 378
+\end_layout
+
+\begin_layout Standard
+The section 
+\shape italic
+Performance Evaluation
+\shape default
+ does not discuss the double-precision performance results.
+ Where they exactly half that of the single-precision results?
+\end_layout
+
+\begin_layout Subsection*
+Page 379
+\end_layout
+
+\begin_layout Quote
+...
+ x 2 (ADD/MUL
+\strikeout on
+\color red
+L
+\strikeout default
+\color inherit
+) x 12 (cores)...
+\end_layout
+
+\begin_layout Subsection*
+Page 382
+\end_layout
+
+\begin_layout Quote
+...
+ while a x2 speedup can be obsered on the coprocessor (Figure 23.1
+\strikeout on
+\color red
+1
+\strikeout default
+\color green
+3
+\color inherit
+).
+ As a matter of fact, it is always better...
+ in case the co
+\color green
+m
+\color inherit
+piler cannot perfectly handle...
+\end_layout
+
+\begin_layout Subsection*
+Page 383
+\end_layout
+
+\begin_layout Quote
+...
+ removing the extra instruction has a direct increase on the performance
+ as shown in Figure 23.1
+\strikeout on
+\color red
+1
+\strikeout default
+\color green
+3
+\color inherit
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+This optimization greatly improves the 2S-E5 results (Figure 23.1
+\strikeout on
+\color red
+1
+\strikeout default
+\color green
+3
+\color inherit
+).
+\end_layout
+
+\begin_layout Subsection*
+Page 384
+\end_layout
+
+\begin_layout Quote
+This optimization has more impact on the coprocessor than on 2S-E5 as shown
+ in Figure 23.1
+\strikeout on
+\color red
+1
+\strikeout default
+\color green
+3
+\color inherit
+.
+\end_layout
+
+\begin_layout Subsection*
+Page 386
+\end_layout
+
+\begin_layout Standard
+Figure 23.12 has nothing to do with the discussion where it is cited.
+ In fact, Figure 23.12 is just a tabular form of Figure 23.13, so I'm not
+ sure what its purpose is.
+\end_layout
+
+\begin_layout Subsection*
+Page 391
+\end_layout
+
+\begin_layout Quote
+Mutation ensures the exploration of the parameter space and avoid
+\color green
+s
+\color inherit
+ a too quick convergence to a local optimum.
+ Here
+\color green
+,
+\color inherit
+ we randomly choose...
+\end_layout
+
+\begin_layout Subsection*
+Page 395
+\end_layout
+
+\begin_layout Quote
+When moving to the cluster scale, the key factor
+\color green
+s
+\color inherit
+ to keep in mind 
+\series bold
+are
+\series default
+ very well summarized...
+\end_layout
+
+\begin_layout Subsection*
+Page 399
+\end_layout
+
+\begin_layout Standard
+Figure 24.1
+\end_layout
+
+\begin_layout Quote
+Writing to one cache line
+\strikeout on
+\color red
+s
+\strikeout default
+\color inherit
+ (streaming write)
+\end_layout
+
+\begin_layout Subsection*
+Page 405
+\end_layout
+
+\begin_layout Quote
+In addition, the timeline is shorter...
+ than in the 
+\strikeout on
+\color red
+parallel
+\strikeout default
+\color inherit
+ 
+\color green
+serial
+\color inherit
+ code.
+\end_layout
+
+\begin_layout Subsection*
+Page 425
+\end_layout
+
+\begin_layout Quote
+
+\strikeout on
+\color red
+A contract to buy is called a call option, and a contract to sell is called
+ a put option.
+\end_layout
+
+\begin_layout Standard
+This sentence is redundant.
+ The definitions were provided in the first sentence of the section.
+\end_layout
+
+\begin_layout Subsection*
+Page 427
+\end_layout
+
+\begin_layout Quote
+This allows packing up to 16 single-
+\strikeout on
+\color red
+precession
+\strikeout default
+\color green
+precision
+\color inherit
+ floating point numbers...
+ 8 double-
+\strikeout on
+\color red
+precession
+\strikeout default
+\color green
+precision
+\color inherit
+...
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+For the compute-intensive applications, multiple coprocessors
+\strikeout on
+\color red
+,
+\strikeout default
+\color inherit
+ and host processors
+\strikeout on
+\color red
+,
+\strikeout default
+\color inherit
+ can be used for...
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+This will allow using 
+\color green
+the
+\color inherit
+ wide vector registers of Intel Xeon Phi coprocessors
+\strikeout on
+\color red
+,
+\strikeout default
+\color inherit
+ and also partition those...
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+It can be implemented by writing two nested for-loops...
+ compiler optimization level.
+\end_layout
+
+\begin_layout Standard
+This is a run-on sentence.
+\end_layout
+
+\begin_layout Subsection*
+Page 441
+\end_layout
+
+\begin_layout Standard
+Figure 25.19:
+\end_layout
+
+\begin_layout Quote
+Performance results for 
+\strikeout on
+\color red
+tree
+\strikeout default
+\color inherit
+ 
+\color green
+the
+\color inherit
+ load balancing...
+\end_layout
+
+\begin_layout Subsection*
+Page 445
+\end_layout
+
+\begin_layout Standard
+Figure 26.1:
+\end_layout
+
+\begin_layout Quote
+
+\shape italic
+nb
+\shape default
+ is the size of the block
+\end_layout
+
+\begin_layout Standard
+This disagrees with the text in point 1 in the 
+\shape italic
+In-core Factorization
+\shape default
+ section.
+\end_layout
+
+\begin_layout Subsection*
+Page 447
+\end_layout
+
+\begin_layout Quote
+The GPU code is written using...
+ (BLAS), manage data transfer, 
+\color green
+and
+\color inherit
+ allocate and deallocate device memory.
+\end_layout
+
+\begin_layout Subsection*
+Page 449
+\end_layout
+
+\begin_layout Quote
+The offload 
+\series bold
+directive
+\series default
+ transfers the pointers (as integers) then recast
+\color green
+s
+\color inherit
+ the integers back...
+\end_layout
+
+\begin_layout Subsection*
+Page 451
+\end_layout
+
+\begin_layout Quote
+The maximum 
+\begin_inset Formula $\rho$
+\end_inset
+
+ can reach...
+\end_layout
+
+\begin_layout Standard
+The variable 
+\begin_inset Formula $\rho$
+\end_inset
+
+ is used without first being defined.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+Especially the GPU version keeps gaining performance at the large N region,
+ 
+\strikeout on
+\color red
+and
+\strikeout default
+\color inherit
+ the CPU version...
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+We show the performance data on fixed processor grids
+\strikeout on
+\color red
+,
+\strikeout default
+\color green
+.
+
+\color inherit
+ 
+\strikeout on
+\color red
+w
+\strikeout default
+\color green
+W
+\color inherit
+e study the performance...
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+For the strong scaling, the matrix size is fix
+\color green
+ed
+\color inherit
+ at N=84,352...
+\end_layout
+
+\begin_layout Subsection*
+Page 452
+\end_layout
+
+\begin_layout Standard
+Figures 26.8 and 26.9: performance is misspelled.
+\end_layout
+
+\begin_layout Subsection*
+Page 453
+\end_layout
+
+\begin_layout Standard
+Figure 26.10: performance is misspelled, and the label should read
+\end_layout
+
+\begin_layout Quote
+Number of device
+\color green
+s
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Figure 26.11: The x-axis is not labeled, and the caption reads
+\end_layout
+
+\begin_layout Quote
+The processor grid is 2p*p
+\color green
+,
+\color inherit
+ 
+\strikeout on
+\color red
+A
+\strikeout default
+\color green
+a
+\color inherit
+nd we use 
+\begin_inset Formula ${\rm p^{2}}$
+\end_inset
+
+ nodes.
+\end_layout
+
+\begin_layout Standard
+However, both the grid size and number of nodes disagrees with the text.
+\end_layout
+
+\begin_layout Subsection*
+Page 459
+\end_layout
+
+\begin_layout Quote
+Random accesses (as opposed to contiguous accesses) have high latency cost,
+ lower throughput, and may 
+\series bold
+stall of compute cores
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+I'm not sure what that is supposed to actually say.
+\end_layout
+
+\begin_layout Subsection*
+Page 462
+\end_layout
+
+\begin_layout Quote
+However, data can also be distributed explicitly by having each core allocate
+\strikeout on
+\color red
+s
+\strikeout default
+\color inherit
+ 
+\strikeout on
+\color red
+their
+\strikeout default
+\color inherit
+ 
+\color green
+its
+\color inherit
+ own memory, so that...
+ it operates 
+\color green
+on
+\color inherit
+ during the parallel computation.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+Each is stored in separate chunks of memory, 
+\series bold
+conform the idea of explicit distributions
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+I have no idea what the last part of the sentence is for.
+ It looks like a copy-paste error.
+\end_layout
+
+\begin_layout Subsection*
+Page 480
+\end_layout
+
+\begin_layout Quote
+Transposing each 
+\begin_inset Formula $4\times4$
+\end_inset
+
+ block just involves permuting 16 values and the permutations are the same
+ for each 
+\begin_inset Formula $4\times$
+\end_inset
+
+
+\color green
+4
+\color inherit
+ block.
+\end_layout
+
+\begin_layout Subsection*
+Page 498
+\end_layout
+
+\begin_layout Quote
+Knights Landing, 4, 66, ..., 30
+\strikeout on
+\color red
+6
+\strikeout default
+\color green
+4
+\color inherit
+, 371...
+\end_layout
+
+\begin_layout Standard
+I just happened upon this one accidentally.
+ There may be more errors in the index.
+\end_layout
+
+\end_body
+\end_document

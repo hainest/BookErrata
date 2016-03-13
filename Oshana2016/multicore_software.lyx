@@ -1,0 +1,623 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 2cm
+\rightmargin 1cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+Conventions used throughout: text to be 
+\strikeout on
+\color red
+removed
+\strikeout default
+\color inherit
+, 
+\series bold
+closely inspected
+\series default
+, and 
+\color green
+added
+\color inherit
+.
+\end_layout
+
+\begin_layout Subsection*
+Page 17
+\end_layout
+
+\begin_layout Quote
+About halfway down the page, there is a list of items that looks like
+\family typewriter
+for(j=0; j<N; 
+\strikeout on
+\color red
+j++
+\strikeout default
+\color green
+j+=2
+\color inherit
+)
+\family default
+ author notes that were not removed.
+\end_layout
+
+\begin_layout Subsection*
+Page 18
+\end_layout
+
+\begin_layout Standard
+Each mention of an array element has a space between the array name and
+ the brackets.
+\end_layout
+
+\begin_layout Quote
+Hence, Loop nest 3 can b
+\color green
+e
+\color inherit
+ parallelized.
+\end_layout
+
+\begin_layout Subsection*
+Page 19
+\end_layout
+
+\begin_layout Quote
+Lets say we want to multiply each element of an array, A
+\color green
+,
+\color inherit
+ by a vector X...
+\end_layout
+
+\begin_layout Standard
+The length variable in the pseudocode is 
+\family typewriter
+\series bold
+\color black
+N
+\family default
+\series default
+\color inherit
+, but it is 
+\family typewriter
+\series bold
+\color black
+n
+\family default
+\series default
+\color inherit
+ in Figure 1.17.
+ The loop index used in 
+\begin_inset Formula ${\rm A\left[I,j\right]}$
+\end_inset
+
+ is uppercase, but the variable is declared lowercase.
+\end_layout
+
+\begin_layout Subsection*
+Page 21
+\end_layout
+
+\begin_layout Quote
+(From page 20) As you may know from your...
+ 
+\series bold
+large
+\series default
+ memories are 
+\series bold
+slow
+\series default
+...
+\begin_inset Newline newline
+\end_inset
+
+Most multicore processors have 
+\series bold
+large
+\series default
+, fast caches.
+\end_layout
+
+\begin_layout Standard
+These two statements unintentionally disagree with each other.
+ Today's processors have large caches in an absolute sense as compared to
+ processors from, say, 20 years ago, but main memory sizes have grown by
+ the same factor.
+ In a relative sense, caches are still very small.
+\end_layout
+
+\begin_layout Quote
+Let
+\family typewriter
+\color green
+'
+\family default
+\color inherit
+s first discuss how data is accessed.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+In order to improve performance...
+ (or any system for that matter)
+\family typewriter
+\color green
+,
+\family default
+\color inherit
+ we should...
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+Data reuse: when possible
+\color green
+,
+\color inherit
+ reuse the same or nearby data 
+\strikeout on
+\color red
+used
+\strikeout default
+\color inherit
+ multiple times.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+This approach is mainly Intrinsic in computation
+\end_layout
+
+\begin_layout Standard
+I'm not sure what this means.
+\end_layout
+
+\begin_layout Quote
+Data locality: with this approach
+\family typewriter
+\color green
+,
+\family default
+\color inherit
+ the goal is...
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+Computations that have reuse can achieve locality...
+ with intelligent 
+\strikeout on
+\color red
+C
+\strikeout default
+\color green
+c
+\color inherit
+ode reordering and transformations.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+Cache hit: this is an in-cache memory access and
+\color green
+,
+\color inherit
+ from a computation perspective
+\color green
+,
+\color inherit
+ is 
+\begin_inset Quotes eld
+\end_inset
+
+cheap
+\begin_inset Quotes erd
+\end_inset
+
+...
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+Cache miss: this is a noncached memory access and 
+\strikeout on
+\color red
+are
+\strikeout default
+\color inherit
+ 
+\color green
+is
+\color inherit
+ computationally...
+\end_layout
+
+\begin_layout Subsection*
+Page 26
+\end_layout
+
+\begin_layout Quote
+Figure 1.25
+\end_layout
+
+\begin_layout Standard
+What are the axis labels? Why are there more data points for the 
+\begin_inset Quotes eld
+\end_inset
+
+naïve cache, increasing threads
+\begin_inset Quotes erd
+\end_inset
+
+ version than the other two? The caption refers to subfigures (a), (b),
+ and (c), but none are present.
+\end_layout
+
+\begin_layout Quote
+You 
+\strikeout on
+\color red
+to
+\strikeout default
+\color inherit
+ need to not only expose parallelism, but ...
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+This becomes increasingly true as the number of cores grows
+\strikeout on
+\color red
+,
+\strikeout default
+\color inherit
+ and the speed of each core 
+\color green
+increases
+\color inherit
+.
+\end_layout
+
+\begin_layout Subsection*
+Page 29
+\end_layout
+
+\begin_layout Quote
+In a diagram for the 
+\strikeout on
+\color red
+dag
+\strikeout default
+\color inherit
+ 
+\color green
+DAG
+\color inherit
+, 
+\begin_inset Formula ${\rm x<y}$
+\end_inset
+
+ means that...
+\end_layout
+
+\begin_layout Standard
+DAG is used without definition here.
+ Should the instances of Tp and T1 be subscripted?
+\end_layout
+
+\begin_layout Subsection*
+Page 30
+\end_layout
+
+\begin_layout Quote
+Figure 1.29 A directed a
+\strikeout on
+\color red
+s
+\strikeout default
+\color green
+c
+\color inherit
+yclic graph (DAG)
+\end_layout
+
+\begin_layout Standard
+The symbol used here to denote the existence of a positive-length path between
+ two nodes is inconsistent with the explanation provided on the previous
+ page.
+ The critical path is not correct.
+ For example, there is no link between node 22 and node 27.
+ The critical path for the DAG shown in Figure 1.29 is
+\end_layout
+
+\begin_layout Quote
+1 < 2 < 3 < 21 < 26 < 27 < 28 < 29 < 25 < 30
+\end_layout
+
+\begin_layout Subsection*
+Page 33
+\end_layout
+
+\begin_layout Standard
+In Figure 2.3, the arrow leading into the square for subfigure (d) should
+ read
+\end_layout
+
+\begin_layout Quote
+
+\strikeout on
+\color red
+Single
+\strikeout default
+\color inherit
+ 
+\color green
+Multiple
+\color inherit
+ instruction
+\end_layout
+
+\begin_layout Subsection*
+Page 34
+\end_layout
+
+\begin_layout Quote
+Multiple instruction, single data stream...
+ is designed 
+\color green
+to
+\color inherit
+ allow
+\color green
+
+\begin_inset space \textvisiblespace{}
+\end_inset
+
+
+\color inherit
+multiple instructions to operate...
+\end_layout
+
+\begin_layout Subsection*
+Page 35
+\end_layout
+
+\begin_layout Quote
+Figure 2.5
+\end_layout
+
+\begin_layout Standard
+The right parenthesis is missing for the call to sqrt in each task window.
+ For Task n, the termination check in the outermost loop (over i) is incomplete.
+\end_layout
+
+\begin_layout Subsection*
+Page 37
+\end_layout
+
+\begin_layout Quote
+DMA is most useful when the CPU cannot...
+\end_layout
+
+\begin_layout Standard
+DMA is used here without definition.
+\end_layout
+
+\begin_layout Subsection*
+Page 51
+\end_layout
+
+\begin_layout Quote
+Today these multicore linear algebraic manipulations.
+\end_layout
+
+\begin_layout Standard
+This isn't a sentence.
+\end_layout
+
+\begin_layout Subsection*
+Page 61
+\end_layout
+
+\begin_layout Quote
+It leverages functionality provided by hardware like hashing, ...
+ classification, 
+\color green
+and
+\color inherit
+ scheduling...
+\end_layout
+
+\begin_layout Subsection*
+Page 63
+\end_layout
+
+\begin_layout Quote
+For example, an eNodeB basestation has a...
+ and 50 Mbps 
+\color green
+uplink
+\color inherit
+ (UL).
+\end_layout
+
+\begin_layout Subsection*
+Page 70
+\end_layout
+
+\begin_layout Standard
+From the first table,
+\end_layout
+
+\begin_layout Quote
+AMD quad core Opte
+\color green
+r
+\color inherit
+on
+\end_layout
+
+\begin_layout Subsection*
+Page 108
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+void VectorAddition(int restrict 
+\color green
+*
+\color inherit
+a, int *b
+\family default
+...
+\end_layout
+
+\begin_layout Subsection*
+Page 109
+\end_layout
+
+\begin_layout Quote
+Below is an example of a doubly nested loop: 
+\family typewriter
+for (i=0; i<N; i++
+\strikeout on
+\color red
++
+\strikeout default
+\color inherit
+)
+\end_layout
+
+\begin_layout Quote
+Here is the same loop with the loop unrolled...
+ 
+\family typewriter
+for(i=0; i<N; i++
+\strikeout on
+\color red
++
+\strikeout default
+\color inherit
+)
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+for(j=0; j<N; 
+\strikeout on
+\color red
+j++
+\strikeout default
+\color green
+j+=2
+\color inherit
+)
+\end_layout
+
+\begin_layout Subsection*
+Page 165
+\end_layout
+
+\begin_layout Standard
+The communication types for MCAPI start out numbered, but then switch to
+ being lettered.
+ I think this is just an indentation typo.
+\end_layout
+
+\end_body
+\end_document
