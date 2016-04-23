@@ -96,19 +96,8 @@ Page 17
 \end_layout
 
 \begin_layout Quote
-About halfway down the page, there is a list of items that looks like
-\family typewriter
-for(j=0; j<N; 
-\strikeout on
-\color red
-j++
-\strikeout default
-\color green
-j+=2
-\color inherit
-)
-\family default
- author notes that were not removed.
+About halfway down the page, there is a list of items that looks like author
+ notes that were not removed.
 \end_layout
 
 \begin_layout Subsection*
