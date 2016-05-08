@@ -1,5 +1,5 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
 \begin_document
 \begin_header
 \textclass article
@@ -12,13 +12,13 @@
 \font_roman default
 \font_sans default
 \font_typewriter default
-\font_math auto
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
+
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -29,24 +29,15 @@
 \use_hyperref false
 \papersize default
 \use_geometry true
-\use_package amsmath 1
-\use_package amssymb 1
-\use_package cancel 1
-\use_package esint 1
-\use_package mathdots 1
-\use_package mathtools 1
-\use_package mhchem 1
-\use_package stackrel 1
-\use_package stmaryrd 1
-\use_package undertilde 1
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
 \cite_engine basic
-\cite_engine_type default
-\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
-\justification true
 \use_refstyle 1
 \index Index
 \shortcut idx
@@ -73,7 +64,40 @@
 
 \begin_body
 
+\begin_layout Title
+Erratum for 
+\shape italic
+Introduction to High Performance Scientific Computing
+\shape default
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Printed book: 2nd Editon, revision 2015
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Author
+Tim Haines
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+e-mail:thaines.astro@gmail.com
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
+\align center
 Conventions used throughout: text to be 
 \strikeout on
 \color red
@@ -95,7 +119,7 @@ added
 Page 30
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 Memo
 \strikeout on
 \color red
@@ -103,28 +127,38 @@ r
 \strikeout default
 \color inherit
 ization
-\begin_inset Newline newline
-\end_inset
-
-
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 
 \series bold
 Division
 \series default
- and transcendental math functions are expensive--even when directly supported
- by the instruction set, they generally have latencies that are 1-2 orders
- of magnitude higher than multiplication and 
+ and transcendental math functions are expensive...
+ they generally have latencies that are 1-2 orders of magnitude higher than
+ multiplication and 
 \series bold
 division
 \series default
 .
 \end_layout
 
-\begin_layout Subsection*
+\begin_deeper
+\begin_layout Quote
+I think this is supposed to say 
+\begin_inset Quotes eld
+\end_inset
 
+addition
+\begin_inset Quotes erd
+\end_inset
+
+ at the end.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Moo
 \end_layout
 
 \end_body

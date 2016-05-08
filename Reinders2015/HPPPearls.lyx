@@ -1,5 +1,5 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
 \begin_document
 \begin_header
 \textclass article
@@ -12,13 +12,13 @@
 \font_roman default
 \font_sans default
 \font_typewriter default
-\font_math auto
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
+
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -29,24 +29,15 @@
 \use_hyperref false
 \papersize default
 \use_geometry true
-\use_package amsmath 1
-\use_package amssymb 1
-\use_package cancel 1
-\use_package esint 1
-\use_package mathdots 1
-\use_package mathtools 1
-\use_package mhchem 1
-\use_package stackrel 1
-\use_package stmaryrd 1
-\use_package undertilde 1
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
 \cite_engine basic
-\cite_engine_type default
-\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
-\justification true
 \use_refstyle 1
 \index Index
 \shortcut idx
@@ -73,7 +64,28 @@
 
 \begin_body
 
+\begin_layout Title
+Erratum for 
+\shape italic
+High Performance Parallelism Pearls (Volume One)
+\end_layout
+
+\begin_layout Author
+Tim Haines
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+e-mail:thaines.astro@gmail.com
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
+\align center
 Conventions used throughout: text to be 
 \strikeout on
 \color red
@@ -95,7 +107,7 @@ added
 Page 30
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 Memo
 \strikeout on
 \color red
@@ -109,7 +121,7 @@ ization
 
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 
 \series bold
 Division
@@ -127,21 +139,23 @@ division
 Page 72
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 In particular, two items highlighted in 
 \series bold
 pink
 \end_layout
 
-\begin_layout Standard
+\begin_deeper
+\begin_layout Quote
 The plots are in black-and-white.
 \end_layout
 
+\end_deeper
 \begin_layout Subsection*
 Page 73
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 We used VTune Amplifier to 
 \series bold
 \color black
@@ -155,7 +169,7 @@ root cause
 
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 
 \shape italic
 \strikeout on
@@ -172,7 +186,7 @@ vmlinux
 Page 83
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 -opt-stream-store
 \color green
 =
@@ -184,7 +198,7 @@ always
 Page 87
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 ...whereas we will show the revised code running on 60 core
 \strikeout on
 \color red
@@ -198,18 +212,15 @@ s
 Page 92
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 Additionally, the [c-1] and [c+
 \color green
 1
 \color inherit
 ] references will be in cache.
-\begin_inset Newline newline
-\end_inset
-
-
 \end_layout
 
+\begin_deeper
 \begin_layout Quote
 Due to vectors along Z, 
 \series bold
@@ -218,11 +229,12 @@ into page
 , multiple cells...
 \end_layout
 
-\begin_layout Standard
+\end_deeper
+\begin_layout Enumerate
 This disagrees with the last sentence of the second paragraph on the page:
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 Looking down the X direction (as viewed from Z/Y plane)...
  is illustrated in Figure 5.4 ...
 \end_layout
@@ -231,24 +243,26 @@ Looking down the X direction (as viewed from Z/Y plane)...
 Page 96
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 Furthermore, the small model improvement was not as anticipated.
  ...
  The improvement to the small model looks good;
 \end_layout
 
-\begin_layout Standard
+\begin_deeper
+\begin_layout Quote
 This is confusing.
  The improvement to the small model was less than that of the large model,
  yet the author says the small model results are good and then goes on to
  say the large model results need to be fixed.
 \end_layout
 
+\end_deeper
 \begin_layout Subsection*
 Page 100
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 
 \strikeout on
 \color red
@@ -258,13 +272,9 @@ parallel pipette
  
 \color green
 parallelepiped
-\begin_inset Newline newline
-\end_inset
-
-
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 This means that the preamble and postamble codes for unaligned loops 
 \series bold
 can
@@ -286,7 +296,7 @@ can
 Page 105
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 Where
 \strikeout on
 \color red
@@ -294,13 +304,9 @@ Where
 \strikeout default
 \color inherit
  the white cells are the yet...
-\begin_inset Newline newline
-\end_inset
-
-
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 Where
 \strikeout on
 \color red
@@ -317,15 +323,13 @@ Where
  when the first thread, t3 of second core, reaches the barrier.
 \end_layout
 
-\begin_layout Standard
+\begin_deeper
+\begin_layout Quote
 This is not a sentence.
-\begin_inset Newline newline
-\end_inset
-
-
 \end_layout
 
-\begin_layout Quote
+\end_deeper
+\begin_layout Enumerate
 The O/S may be doing some housekeeping
 \color green
 ,
@@ -333,7 +337,7 @@ The O/S may be doing some housekeeping
  too.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Quote
 The entire section 
 \shape italic
 The Plesiochronous Phasing Barrier
@@ -347,7 +351,7 @@ The Plesiochronous Phasing Barrier
 Page 118
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 Systems, in turn
 \strikeout on
 \color red
@@ -361,7 +365,7 @@ s
 Page 134
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 The ANN essentially teaches itself 
 \color green
 to
@@ -373,7 +377,7 @@ to
 Page 136
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 The principle advantage of this sigmoid is that we know the exact number
  
 \color green
@@ -386,7 +390,7 @@ of
 Page 138
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
 All of the underscores in Figure 7.11 have been replaced with spaces.
  The formatting appears to be a bit off, as well.
 \end_layout
@@ -395,7 +399,7 @@ All of the underscores in Figure 7.11 have been replaced with spaces.
 Page 141
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 As previously discussed, near-linear scaling and PF/s performance...
  on the TACC Stampede supercomputer (see Figure 7.
 \strikeout on
@@ -416,7 +420,7 @@ Page 151
 Caption for Figure 8.7:
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 The 
 \series bold
 red
@@ -424,10 +428,12 @@ red
  elements are padding...
 \end_layout
 
-\begin_layout Standard
+\begin_deeper
+\begin_layout Quote
 The figure is in black-and-white.
 \end_layout
 
+\end_deeper
 \begin_layout Subsection*
 Page 165
 \end_layout
@@ -443,7 +449,7 @@ Figure 9.9 is very hard to read.
 Page 168
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 With all this in mind, we need to choose a maximum tiling factor of 2688
  for 
 \strikeout on
@@ -460,7 +466,7 @@ F
 Page 170
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 
 \shape italic
 BFI
@@ -510,7 +516,7 @@ Page 173
 Caption for Figure 9.20:
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 
 \strikeout on
 \color red
@@ -528,7 +534,7 @@ Single
 Page 174
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 These optimizations increased the maximum performance 
 \strikeout on
 \color red
@@ -547,13 +553,9 @@ maximum performance of
 \strikeout default
 \color inherit
 76.3...
-\begin_inset Newline newline
-\end_inset
-
-
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 The final optimized version of the code obtained 
 \strikeout on
 \color red
@@ -567,20 +569,25 @@ an
 Page 177
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
 
 \shape italic
 P
 \shape default
  is used without being defined.
- I think it is the number of processors.
 \end_layout
 
+\begin_deeper
+\begin_layout Quote
+I think it is the number of processors.
+\end_layout
+
+\end_deeper
 \begin_layout Subsection*
 Page 178
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 To be more specific, it tells the compiler to explicitly...
  and 
 \strikeout on
@@ -595,7 +602,7 @@ also
 Page 179
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 Figure 10.
 \strikeout on
 \color red
@@ -612,7 +619,7 @@ Figure 10.
 Page 180
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 The legends 
 \begin_inset Quotes eld
 \end_inset
@@ -640,10 +647,12 @@ _mm256,
 ...
 \end_layout
 
-\begin_layout Standard
+\begin_deeper
+\begin_layout Quote
 These descriptions do not match those used in the figure (Figure 10.4).
 \end_layout
 
+\end_deeper
 \begin_layout Subsection*
 Page 182
 \end_layout
@@ -659,7 +668,7 @@ A more detailed discussion of the performance differences in Figure 10.6
 Page 188
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 ...
  and 
 \begin_inset Formula ${\rm u}_{ij}$
@@ -686,7 +695,7 @@ ary
 Page 216
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 If we would not do this, for example
 \strikeout on
 \color red
@@ -710,16 +719,14 @@ position
 ...
 \end_layout
 
-\begin_layout Standard
+\begin_deeper
+\begin_layout Enumerate
 In C++, variables contained in a class are referred to as member variables
  rather than attributes.
-\begin_inset Newline newline
-\end_inset
-
-
 \end_layout
 
-\begin_layout Quote
+\end_deeper
+\begin_layout Enumerate
 For the local copy
 \color green
 ,
@@ -732,7 +739,11 @@ Page 217
 \end_layout
 
 \begin_layout Standard
-Figure 12.13: There are several instances of 
+Figure 12.13:
+\end_layout
+
+\begin_layout Enumerate
+There are several instances of 
 \shape italic
 position
 \shape default
@@ -743,16 +754,20 @@ position
 Page 218
 \end_layout
 
-\begin_layout Quote
-Figure 12.15: In C++, identifiers beginning with a double underscore are
- reserved by the implementation for any use (see Section 2.10.3.1).
+\begin_layout Standard
+Figure 12.15:
+\end_layout
+
+\begin_layout Enumerate
+In C++, identifiers beginning with a double underscore are reserved by the
+ implementation for any use (see Section 2.10.3.1 of the N4296 draft standard).
 \end_layout
 
 \begin_layout Subsection*
 Page 222
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 For 
 \family typewriter
 dgemm
@@ -771,7 +786,7 @@ dgemm
 Page 223
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 Applications that display a similar scaling behavior like our PD example
 \color red
 ,
@@ -783,7 +798,7 @@ Applications that display a similar scaling behavior like our PD example
 Page 227
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 Each coprocessor and graphics device 
 \strikeout on
 \color red
@@ -795,13 +810,9 @@ have
 has
 \color inherit
  its own memory...
-\begin_inset Newline newline
-\end_inset
-
-
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 However, for applications in scientific domains that communicate between
  neighbors
 \strikeout on
@@ -810,13 +821,9 @@ However, for applications in scientific domains that communicate between
 \strikeout default
 \color inherit
  or aggregate communication...
-\begin_inset Newline newline
-\end_inset
-
-
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 In systems with a coprocessor, it is more likely...
  on the coprocess
 \strikeout on
@@ -825,25 +832,17 @@ In systems with a coprocessor, it is more likely...
 \strikeout default
 \color inherit
  the OpenMP parallel...
-\begin_inset Newline newline
-\end_inset
-
-
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 Unless you have an architecture diagram of a node
 \color green
 ,
 \color inherit
  there isn't much...
-\begin_inset Newline newline
-\end_inset
-
-
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 
 \strikeout on
 \color red
@@ -857,7 +856,8 @@ T
 he two containers labeled Socket P#0...
 \end_layout
 
-\begin_layout Standard
+\begin_deeper
+\begin_layout Enumerate
 There is never a 
 \begin_inset Quotes eld
 \end_inset
@@ -867,13 +867,10 @@ second.
 \end_inset
 
 
-\begin_inset Newline newline
-\end_inset
-
-
 \end_layout
 
-\begin_layout Quote
+\end_deeper
+\begin_layout Enumerate
 In 
 \strikeout on
 \color red
@@ -893,25 +890,17 @@ node
 \end_inset
 
  is a...
-\begin_inset Newline newline
-\end_inset
-
-
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 Within a socket
 \color green
 ,
 \color inherit
  the cores are labeled as PU...
-\begin_inset Newline newline
-\end_inset
-
-
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 Figure 13.4 categorizes and illustrates ways that tasks (white 
 \series bold
 discs
@@ -919,16 +908,14 @@ discs
  as possible...
 \end_layout
 
-\begin_layout Standard
+\begin_deeper
+\begin_layout Quote
 This is the British English spelling, but US English has been used throughout
  the text, otherwise.
-\begin_inset Newline newline
-\end_inset
-
-
 \end_layout
 
-\begin_layout Quote
+\end_deeper
+\begin_layout Enumerate
 As mentioned earlier, the Pure MPI...
  amount of communication
 \strikeout on
@@ -943,7 +930,7 @@ As mentioned earlier, the Pure MPI...
 Page 230
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 ...
  setting I_MPI_PIN_DOMAIN=socket will 
 \strikeout on
@@ -960,7 +947,7 @@ nsure that tasks will be assigned...
 Page 231
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
 The 
 \begin_inset Quotes eld
 \end_inset
@@ -970,20 +957,20 @@ Mask element 2
 \end_inset
 
  bitstring does not match the text.
- The text says
-\end_layout
+ The text says 
+\begin_inset Quotes eld
+\end_inset
 
-\begin_layout Quote
 ...
  and rank 1 to run its threads on 0, 1, and 
 \series bold
 3
 \series default
 .
-\end_layout
+\begin_inset Quotes erd
+\end_inset
 
-\begin_layout Standard
-but the bitstring specifies 0, 1, and 
+ but the bitstring specifies 0, 1, and 
 \series bold
 2
 \series default
@@ -994,7 +981,7 @@ but the bitstring specifies 0, 1, and
 Page 233
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 The proxy is enabled by default
 \strikeout on
 \color red
@@ -1008,7 +995,7 @@ The proxy is enabled by default
 Page 237
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 While the bindings selected by the Intel MPI library use hardware information
 \color green
 ,
@@ -1026,7 +1013,7 @@ and
 Page 253
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 We can have confidence 
 \strikeout on
 \color red
@@ -1042,7 +1029,7 @@ n them.
 Page 256
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 Beach is a Cray...
  Cluster comprised 
 \color green
@@ -1055,7 +1042,7 @@ of
 Page 257
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 extending and customizing coprocessor
 \strikeout on
 \color red
@@ -1069,7 +1056,7 @@ s
 Page 309
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
 The superscript 
 \begin_inset Quotes eld
 \end_inset
@@ -1085,7 +1072,7 @@ serial
 Page 310
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 The OpenMP efficiency is very low for this benchmark, and it
 \strikeout on
 \color red
@@ -1099,7 +1086,7 @@ The OpenMP efficiency is very low for this benchmark, and it
 Page 311
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
 In Figure 18.3, the second argument to the second filter in the pipeline
  is declared to take a 
 \family typewriter
@@ -1120,8 +1107,8 @@ float
 void
 \family default
 ), this is undefined behavior.
- It looks like the fix is just to remove the explicit trailing return type,
- and just let the compiler deduce that the lambda returns 
+ The fix is just to remove the explicit trailing return type, and just let
+ the compiler deduce that the lambda returns 
 \family typewriter
 void
 \family default
@@ -1132,7 +1119,7 @@ void
 Page 313
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 A nice feature of the user-managed task arena...
  running tasks
 \color green
@@ -1150,7 +1137,7 @@ a
 Page 316
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 When 
 \color green
 the
@@ -1163,7 +1150,7 @@ the
 Page 327
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 Using the keyword restrict in 
 \color green
 the
@@ -1184,8 +1171,11 @@ Page 330
 \end_layout
 
 \begin_layout Standard
-Figure 19.16: The digit separators are being mixed between a period and a
- comma.
+Figure 19.16:
+\end_layout
+
+\begin_layout Enumerate
+The digit separators are being mixed between a period and a comma.
 \end_layout
 
 \begin_layout Subsection*
@@ -1196,7 +1186,7 @@ Page 350
 The caption for Figure 21.2:
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 At each hit point
 \color green
 ,
@@ -1209,11 +1199,15 @@ Page 357
 \end_layout
 
 \begin_layout Standard
-Figure 21.9: The comparison of the Intel Xeon Phi 7120D against an off-the-shelf,
- consumer-grade GPU like the NVIDIA GeForce GTX Titan is completely misguided.
+Figure 21.9:
+\end_layout
+
+\begin_layout Enumerate
+The comparison of the Intel Xeon Phi 7120D against an off-the-shelf, consumer-gr
+ade GPU like the NVIDIA GeForce GTX Titan is completely misguided.
  The GeForce line is designed to run video games, not render photo-realistic
  scenes with extremely complex lighting calculations.
- The author should have used a Kepler Quadro or Tesla card for this comparison.
+ The author should have used a Quadro or Tesla card for this comparison.
 \end_layout
 
 \begin_layout Subsection*
@@ -1221,7 +1215,11 @@ Page 362
 \end_layout
 
 \begin_layout Standard
-Figure 22.3: The OpenCL library routines do not have an 
+Figure 22.3:
+\end_layout
+
+\begin_layout Enumerate
+The OpenCL library routines do not have an 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1236,7 +1234,7 @@ ocl
 Page 364
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
 The OpenCL library routines do not have an 
 \begin_inset Quotes eld
 \end_inset
@@ -1252,7 +1250,7 @@ ocl
 Page 365
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 In Figure 22.6b
 \color green
 ,
@@ -1264,7 +1262,7 @@ In Figure 22.6b
 Page 378
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
 The section 
 \shape italic
 Performance Evaluation
@@ -1277,7 +1275,7 @@ Performance Evaluation
 Page 379
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 ...
  x 2 (ADD/MUL
 \strikeout on
@@ -1292,7 +1290,7 @@ L
 Page 382
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 ...
  while a x2 speedup can be obsered on the coprocessor (Figure 23.1
 \strikeout on
@@ -1315,7 +1313,7 @@ piler cannot perfectly handle...
 Page 383
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 ...
  removing the extra instruction has a direct increase on the performance
  as shown in Figure 23.1
@@ -1327,13 +1325,9 @@ Page 383
 3
 \color inherit
 .
-\begin_inset Newline newline
-\end_inset
-
-
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 This optimization greatly improves the 2S-E5 results (Figure 23.1
 \strikeout on
 \color red
@@ -1349,7 +1343,7 @@ This optimization greatly improves the 2S-E5 results (Figure 23.1
 Page 384
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 This optimization has more impact on the coprocessor than on 2S-E5 as shown
  in Figure 23.1
 \strikeout on
@@ -1376,7 +1370,7 @@ Figure 23.12 has nothing to do with the discussion where it is cited.
 Page 391
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 Mutation ensures the exploration of the parameter space and avoid
 \color green
 s
@@ -1393,7 +1387,7 @@ s
 Page 395
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 When moving to the cluster scale, the key factor
 \color green
 s
@@ -1409,12 +1403,8 @@ are
 Page 399
 \end_layout
 
-\begin_layout Standard
-Figure 24.1
-\end_layout
-
-\begin_layout Quote
-Writing to one cache line
+\begin_layout Enumerate
+Figure 24.1: Writing to one cache line
 \strikeout on
 \color red
 s
@@ -1427,7 +1417,7 @@ s
 Page 405
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 In addition, the timeline is shorter...
  than in the 
 \strikeout on
@@ -1446,7 +1436,7 @@ serial
 Page 425
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 
 \strikeout on
 \color red
@@ -1454,16 +1444,18 @@ A contract to buy is called a call option, and a contract to sell is called
  a put option.
 \end_layout
 
-\begin_layout Standard
+\begin_deeper
+\begin_layout Quote
 This sentence is redundant.
  The definitions were provided in the first sentence of the section.
 \end_layout
 
+\end_deeper
 \begin_layout Subsection*
 Page 427
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 This allows packing up to 16 single-
 \strikeout on
 \color red
@@ -1482,13 +1474,9 @@ precession
 precision
 \color inherit
 ...
-\begin_inset Newline newline
-\end_inset
-
-
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 For the compute-intensive applications, multiple coprocessors
 \strikeout on
 \color red
@@ -1502,13 +1490,9 @@ For the compute-intensive applications, multiple coprocessors
 \strikeout default
 \color inherit
  can be used for...
-\begin_inset Newline newline
-\end_inset
-
-
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 This will allow using 
 \color green
 the
@@ -1520,21 +1504,19 @@ the
 \strikeout default
 \color inherit
  and also partition those...
-\begin_inset Newline newline
-\end_inset
-
-
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 It can be implemented by writing two nested for-loops...
  compiler optimization level.
 \end_layout
 
-\begin_layout Standard
+\begin_deeper
+\begin_layout Quote
 This is a run-on sentence.
 \end_layout
 
+\end_deeper
 \begin_layout Subsection*
 Page 441
 \end_layout
@@ -1543,7 +1525,7 @@ Page 441
 Figure 25.19:
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 Performance results for 
 \strikeout on
 \color red
@@ -1565,7 +1547,7 @@ Page 445
 Figure 26.1:
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 
 \shape italic
 nb
@@ -1573,7 +1555,8 @@ nb
  is the size of the block
 \end_layout
 
-\begin_layout Standard
+\begin_deeper
+\begin_layout Quote
 This disagrees with the text in point 1 in the 
 \shape italic
 In-core Factorization
@@ -1581,11 +1564,12 @@ In-core Factorization
  section.
 \end_layout
 
+\end_deeper
 \begin_layout Subsection*
 Page 447
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 The GPU code is written using...
  (BLAS), manage data transfer, 
 \color green
@@ -1598,7 +1582,7 @@ and
 Page 449
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 The offload 
 \series bold
 directive
@@ -1614,7 +1598,7 @@ s
 Page 451
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 The maximum 
 \begin_inset Formula $\rho$
 \end_inset
@@ -1622,19 +1606,17 @@ The maximum
  can reach...
 \end_layout
 
-\begin_layout Standard
+\begin_deeper
+\begin_layout Quote
 The variable 
 \begin_inset Formula $\rho$
 \end_inset
 
  is used without first being defined.
-\begin_inset Newline newline
-\end_inset
-
-
 \end_layout
 
-\begin_layout Quote
+\end_deeper
+\begin_layout Enumerate
 Especially the GPU version keeps gaining performance at the large N region,
  
 \strikeout on
@@ -1643,13 +1625,9 @@ and
 \strikeout default
 \color inherit
  the CPU version...
-\begin_inset Newline newline
-\end_inset
-
-
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 We show the performance data on fixed processor grids
 \strikeout on
 \color red
@@ -1668,13 +1646,9 @@ w
 W
 \color inherit
 e study the performance...
-\begin_inset Newline newline
-\end_inset
-
-
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 For the strong scaling, the matrix size is fix
 \color green
 ed
@@ -1687,7 +1661,11 @@ Page 452
 \end_layout
 
 \begin_layout Standard
-Figures 26.8 and 26.9: performance is misspelled.
+Figures 26.8 and 26.9:
+\end_layout
+
+\begin_layout Enumerate
+performance is misspelled.
 \end_layout
 
 \begin_layout Subsection*
@@ -1695,24 +1673,40 @@ Page 453
 \end_layout
 
 \begin_layout Standard
-Figure 26.10: performance is misspelled, and the label should read
+Figure 26.10:
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
+performance is misspelled
+\end_layout
+
+\begin_layout Enumerate
+label should read 
+\begin_inset Quotes eld
+\end_inset
+
 Number of device
 \color green
 s
-\begin_inset Newline newline
+\begin_inset Quotes erd
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-Figure 26.11: The x-axis is not labeled, and the caption reads
+Figure 26.11:
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
+The x-axis is not labeled
+\end_layout
+
+\begin_layout Enumerate
+the caption reads 
+\begin_inset Quotes eld
+\end_inset
+
 The processor grid is 2p*p
 \color green
 ,
@@ -1730,17 +1724,23 @@ nd we use
 \end_inset
 
  nodes.
+\begin_inset Quotes erd
+\end_inset
+
+
 \end_layout
 
-\begin_layout Standard
+\begin_deeper
+\begin_layout Quote
 However, both the grid size and number of nodes disagrees with the text.
 \end_layout
 
+\end_deeper
 \begin_layout Subsection*
 Page 459
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 Random accesses (as opposed to contiguous accesses) have high latency cost,
  lower throughput, and may 
 \series bold
@@ -1749,15 +1749,17 @@ stall of compute cores
 .
 \end_layout
 
-\begin_layout Standard
+\begin_deeper
+\begin_layout Quote
 I'm not sure what that is supposed to actually say.
 \end_layout
 
+\end_deeper
 \begin_layout Subsection*
 Page 462
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 However, data can also be distributed explicitly by having each core allocate
 \strikeout on
 \color red
@@ -1780,13 +1782,9 @@ its
 on
 \color inherit
  during the parallel computation.
-\begin_inset Newline newline
-\end_inset
-
-
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 Each is stored in separate chunks of memory, 
 \series bold
 conform the idea of explicit distributions
@@ -1794,16 +1792,18 @@ conform the idea of explicit distributions
 .
 \end_layout
 
-\begin_layout Standard
+\begin_deeper
+\begin_layout Quote
 I have no idea what the last part of the sentence is for.
  It looks like a copy-paste error.
 \end_layout
 
+\end_deeper
 \begin_layout Subsection*
 Page 480
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 Transposing each 
 \begin_inset Formula $4\times4$
 \end_inset
@@ -1824,7 +1824,7 @@ Transposing each
 Page 498
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 Knights Landing, 4, 66, ..., 30
 \strikeout on
 \color red
@@ -1836,10 +1836,12 @@ Knights Landing, 4, 66, ..., 30
 , 371...
 \end_layout
 
-\begin_layout Standard
+\begin_deeper
+\begin_layout Quote
 I just happened upon this one accidentally.
  There may be more errors in the index.
 \end_layout
 
+\end_deeper
 \end_body
 \end_document
