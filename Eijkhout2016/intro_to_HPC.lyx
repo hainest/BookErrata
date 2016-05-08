@@ -120,45 +120,363 @@ Page 30
 \end_layout
 
 \begin_layout Enumerate
-Memo
+Direct mapping is very efficient becuase 
 \strikeout on
 \color red
-r
+of
 \strikeout default
 \color inherit
-ization
+ its address calculations...
+\end_layout
+
+\begin_layout Subsection*
+Page 32
 \end_layout
 
 \begin_layout Enumerate
-
-\series bold
-Division
-\series default
- and transcendental math functions are expensive...
- they generally have latencies that are 1-2 orders of magnitude higher than
- multiplication and 
-\series bold
-division
-\series default
+Both caches 
+\strikeout on
+\color red
+has
+\strikeout default
+\color inherit
+ 
+\color green
+have
+\color inherit
+ 12 elements, but 
+\color green
+are
+\color inherit
+ addressed 
+\strikeout on
+\color red
+diferently
+\strikeout default
+\color inherit
+ 
+\color green
+differently
+\color inherit
 .
+\end_layout
+
+\begin_layout Subsection*
+Page 34
+\end_layout
+
+\begin_layout Enumerate
+Consequently, any data requested...
+ delay at least equal 
+\color green
+to
+\color inherit
+ the memory latency.
+\end_layout
+
+\begin_layout Enumerate
+Above, we discussed issues relating to 
+\strikeout on
+\color red
+bandwdith
+\strikeout default
+\color inherit
+ 
+\color green
+bandwidth
+\color inherit
+.
+\end_layout
+
+\begin_layout Subsection*
+Page 37
+\end_layout
+
+\begin_layout Enumerate
+The problem of ensuring that all cached data...
+ main memory
+\strikeout on
+\color red
+,
+\strikeout default
+\color inherit
+ is referred to as...
+\end_layout
+
+\begin_layout Enumerate
+However, processor
+\color green
+s
+\color inherit
+ typically have some private cache, which contains...
+\end_layout
+
+\begin_layout Enumerate
+The alternative is for any core that alters data to send 
+\strikeout on
+\color red
+thhat
+\strikeout default
+\color inherit
+ 
+\color green
+that
+\color inherit
+...
+\end_layout
+
+\begin_layout Subsection*
+Page 39
+\end_layout
+
+\begin_layout Enumerate
+This is called 
+\shape italic
+false sharing
+\strikeout on
+\color red
+--underline
+\shape default
+\strikeout default
+\color inherit
+.
+\end_layout
+
+\begin_layout Enumerate
+It turns out that in scientific computing 
+\series bold
+there is often data often interacts mostly
+\series default
+ with data that is...
 \end_layout
 
 \begin_deeper
 \begin_layout Quote
-I think this is supposed to say 
-\begin_inset Quotes eld
-\end_inset
-
-addition
-\begin_inset Quotes erd
-\end_inset
-
- at the end.
+I'm not sure what this is supposed to say.
 \end_layout
 
 \end_deeper
+\begin_layout Subsection*
+Page 47
+\end_layout
+
 \begin_layout Enumerate
-Moo
+The full listings of the codes and explanations of the data graphed here
+ can be found in 
+\strikeout on
+\color red
+appendix
+\strikeout default
+\color inherit
+ 
+\color green
+chapter
+\color inherit
+ 31.
+\end_layout
+
+\begin_layout Subsection*
+Page 51
+\end_layout
+
+\begin_layout Enumerate
+
+\family typewriter
+#define INDEX(i, j, m, n) i+j*m
+\end_layout
+
+\begin_deeper
+\begin_layout Quote
+The 
+\family typewriter
+n
+\family default
+ parameter is superfluous here.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+Page 52
+\end_layout
+
+\begin_layout Enumerate
+Figure 1.1
+\strikeout on
+\color red
+9
+\strikeout default
+\color green
+8 
+\color inherit
+shows that, with increasing n, the number of TLB misses per column is roughtly
+ two.
+\end_layout
+
+\begin_layout Enumerate
+Figure 1.1
+\strikeout on
+\color red
+8
+\strikeout default
+\color green
+9
+\color inherit
+ shows that, with a large enough number of columns, the number of TLB misses...
+\end_layout
+
+\begin_layout Subsection*
+Page 57
+\end_layout
+
+\begin_layout Enumerate
+Suppose a piece of code repeatedly operates on an amount of data that 
+\color green
+is
+\color inherit
+ 
+\strikeout on
+\color red
+less data
+\strikeout default
+\color inherit
+ 
+\color green
+smaller
+\color inherit
+ than the cache size.
+\end_layout
+
+\begin_layout Subsection*
+Page 59
+\end_layout
+
+\begin_layout Enumerate
+The key here is 
+\color green
+to
+\color inherit
+ split the loops into blocks.
+\end_layout
+
+\begin_layout Subsection*
+Page 66
+\end_layout
+
+\begin_layout Standard
+Figure 2.2:
+\end_layout
+
+\begin_layout Enumerate
+Parallelization of a vector 
+\strikeout on
+\color red
+addition
+\strikeout default
+\color inherit
+ 
+\color green
+reduction
+\color inherit
+.
+\end_layout
+
+\begin_layout Standard
+Figure 2.3
+\end_layout
+
+\begin_layout Enumerate
+Communication structure of a parallel vector 
+\strikeout on
+\color red
+addition
+\strikeout default
+\color inherit
+ 
+\color green
+reduction
+\color inherit
+.
+\end_layout
+
+\begin_layout Subsection*
+Page 73
+\end_layout
+
+\begin_layout Enumerate
+It is not necessary for this problem to fit on 
+\series bold
+a
+\series default
+ single processor
+\strikeout on
+\color red
+s
+\strikeout default
+\color inherit
+: often a smaller...
+\end_layout
+
+\begin_layout Subsection*
+Page 85
+\end_layout
+
+\begin_layout Enumerate
+Since the computations have no data dependencies and need not 
+\color green
+be
+\color inherit
+ done in any particular sequence, this is often called embarassingly parallel
+ or conveniently 
+\strikeout on
+\color red
+paralllel
+\strikeout default
+\color inherit
+ 
+\color green
+parallel
+\color inherit
+ computing.
+\end_layout
+
+\begin_layout Subsection*
+Page 89
+\end_layout
+
+\begin_layout Enumerate
+
+\family typewriter
+int t
+\strikeout on
+\color red
+, r
+\strikeout default
+\color inherit
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Quote
+
+\family typewriter
+r
+\family default
+ is unused in this code snippet.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+Page 92
+\end_layout
+
+\begin_layout Enumerate
+It is natural to think of affinity 
+\strikeout on
+\color red
+to think
+\strikeout default
+\color inherit
+ in terms of...
 \end_layout
 
 \end_body
