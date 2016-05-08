@@ -1,5 +1,5 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
 \begin_document
 \begin_header
 \textclass article
@@ -12,13 +12,13 @@
 \font_roman default
 \font_sans default
 \font_typewriter default
-\font_math auto
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
+
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -29,24 +29,15 @@
 \use_hyperref false
 \papersize default
 \use_geometry true
-\use_package amsmath 1
-\use_package amssymb 1
-\use_package cancel 1
-\use_package esint 1
-\use_package mathdots 1
-\use_package mathtools 1
-\use_package mhchem 1
-\use_package stackrel 1
-\use_package stmaryrd 1
-\use_package undertilde 1
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
 \cite_engine basic
-\cite_engine_type default
-\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
-\justification true
 \use_refstyle 1
 \index Index
 \shortcut idx
@@ -73,7 +64,28 @@
 
 \begin_body
 
+\begin_layout Title
+Erratum for 
+\shape italic
+Multicore Software Development Techniques
+\end_layout
+
+\begin_layout Author
+Tim Haines
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+e-mail:thaines.astro@gmail.com
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
+\align center
 Conventions used throughout: text to be 
 \strikeout on
 \color red
@@ -95,7 +107,7 @@ added
 Page 17
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 About halfway down the page, there is a list of items that looks like author
  notes that were not removed.
 \end_layout
@@ -104,12 +116,12 @@ About halfway down the page, there is a list of items that looks like author
 Page 18
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
 Each mention of an array element has a space between the array name and
  the brackets.
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 Hence, Loop nest 3 can b
 \color green
 e
@@ -117,11 +129,41 @@ e
  parallelized.
 \end_layout
 
+\begin_layout Enumerate
+
+\family typewriter
+a[4*i] = a[2*
+\shape italic
+i
+\shape default
+-
+\strikeout on
+\color red
+i
+\strikeout default
+\color inherit
+1]
+\end_layout
+
+\begin_deeper
+\begin_layout Quote
+The 
+\family typewriter
+i
+\family default
+ in 
+\family typewriter
+2*i
+\family default
+ is unnecessarily italicized.
+\end_layout
+
+\end_deeper
 \begin_layout Subsection*
 Page 19
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 Lets say we want to multiply each element of an array, A
 \color green
 ,
@@ -129,7 +171,8 @@ Lets say we want to multiply each element of an array, A
  by a vector X...
 \end_layout
 
-\begin_layout Standard
+\begin_deeper
+\begin_layout Quote
 The length variable in the pseudocode is 
 \family typewriter
 \series bold
@@ -154,11 +197,12 @@ n
  is uppercase, but the variable is declared lowercase.
 \end_layout
 
+\end_deeper
 \begin_layout Subsection*
 Page 21
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 (From page 20) As you may know from your...
  
 \series bold
@@ -169,17 +213,15 @@ large
 slow
 \series default
 ...
-\begin_inset Newline newline
-\end_inset
-
-Most multicore processors have 
+ Most multicore processors have 
 \series bold
 large
 \series default
 , fast caches.
 \end_layout
 
-\begin_layout Standard
+\begin_deeper
+\begin_layout Quote
 These two statements unintentionally disagree with each other.
  Today's processors have large caches in an absolute sense as compared to
  processors from, say, 20 years ago, but main memory sizes have grown by
@@ -187,7 +229,8 @@ These two statements unintentionally disagree with each other.
  In a relative sense, caches are still very small.
 \end_layout
 
-\begin_layout Quote
+\end_deeper
+\begin_layout Enumerate
 Let
 \family typewriter
 \color green
@@ -195,13 +238,9 @@ Let
 \family default
 \color inherit
 s first discuss how data is accessed.
-\begin_inset Newline newline
-\end_inset
-
-
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 In order to improve performance...
  (or any system for that matter)
 \family typewriter
@@ -210,13 +249,9 @@ In order to improve performance...
 \family default
 \color inherit
  we should...
-\begin_inset Newline newline
-\end_inset
-
-
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 Data reuse: when possible
 \color green
 ,
@@ -228,21 +263,19 @@ used
 \strikeout default
 \color inherit
  multiple times.
-\begin_inset Newline newline
-\end_inset
-
-
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 This approach is mainly Intrinsic in computation
 \end_layout
 
-\begin_layout Standard
+\begin_deeper
+\begin_layout Quote
 I'm not sure what this means.
 \end_layout
 
-\begin_layout Quote
+\end_deeper
+\begin_layout Enumerate
 Data locality: with this approach
 \family typewriter
 \color green
@@ -250,13 +283,9 @@ Data locality: with this approach
 \family default
 \color inherit
  the goal is...
-\begin_inset Newline newline
-\end_inset
-
-
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 Computations that have reuse can achieve locality...
  with intelligent 
 \strikeout on
@@ -267,13 +296,9 @@ C
 c
 \color inherit
 ode reordering and transformations.
-\begin_inset Newline newline
-\end_inset
-
-
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 Cache hit: this is an in-cache memory access and
 \color green
 ,
@@ -291,13 +316,9 @@ cheap
 \end_inset
 
 ...
-\begin_inset Newline newline
-\end_inset
-
-
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 Cache miss: this is a noncached memory access and 
 \strikeout on
 \color red
@@ -312,14 +333,76 @@ is
 \end_layout
 
 \begin_layout Subsection*
+Page 22
+\end_layout
+
+\begin_layout Enumerate
+Figure 1.20 Matrix 
+\strikeout on
+\color red
+multiple
+\strikeout default
+\color inherit
+ 
+\color green
+multiplication
+\color inherit
+ algorithm
+\end_layout
+
+\begin_layout Enumerate
+...
+ and the CPU must access 
+\color green
+the
+\color inherit
+ next, slower level...
+\end_layout
+
+\begin_layout Enumerate
+Let
+\color green
+'
+\color inherit
+s take the example of a matrix multiply.
+\end_layout
+
+\begin_layout Enumerate
+We will consider a 
+\begin_inset Quotes eld
+\end_inset
+
+naïve
+\begin_inset Quotes erd
+\end_inset
+
+ version 
+\strikeout on
+\color red
+of matrix multiple
+\strikeout default
+\color inherit
+ and a 
+\begin_inset Quotes eld
+\end_inset
+
+cache
+\begin_inset Quotes erd
+\end_inset
+
+ version.
+\end_layout
+
+\begin_layout Subsection*
 Page 26
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 Figure 1.25
 \end_layout
 
-\begin_layout Standard
+\begin_deeper
+\begin_layout Quote
 What are the axis labels? Why are there more data points for the 
 \begin_inset Quotes eld
 \end_inset
@@ -332,7 +415,8 @@ naïve cache, increasing threads
  and (c), but none are present.
 \end_layout
 
-\begin_layout Quote
+\end_deeper
+\begin_layout Enumerate
 You 
 \strikeout on
 \color red
@@ -340,13 +424,9 @@ to
 \strikeout default
 \color inherit
  need to not only expose parallelism, but ...
-\begin_inset Newline newline
-\end_inset
-
-
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 This becomes increasingly true as the number of cores grows
 \strikeout on
 \color red
@@ -364,7 +444,7 @@ increases
 Page 29
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 In a diagram for the 
 \strikeout on
 \color red
@@ -382,16 +462,18 @@ DAG
  means that...
 \end_layout
 
-\begin_layout Standard
+\begin_deeper
+\begin_layout Quote
 DAG is used without definition here.
  Should the instances of Tp and T1 be subscripted?
 \end_layout
 
+\end_deeper
 \begin_layout Subsection*
 Page 30
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 Figure 1.29 A directed a
 \strikeout on
 \color red
@@ -403,28 +485,35 @@ c
 yclic graph (DAG)
 \end_layout
 
-\begin_layout Standard
+\begin_deeper
+\begin_layout Quote
 The symbol used here to denote the existence of a positive-length path between
  two nodes is inconsistent with the explanation provided on the previous
  page.
  The critical path is not correct.
  For example, there is no link between node 22 and node 27.
  The critical path for the DAG shown in Figure 1.29 is
-\end_layout
+\begin_inset Newline newline
+\end_inset
 
-\begin_layout Quote
+
+\begin_inset Newline newline
+\end_inset
+
 1 < 2 < 3 < 21 < 26 < 27 < 28 < 29 < 25 < 30
 \end_layout
 
+\end_deeper
 \begin_layout Subsection*
 Page 33
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
 In Figure 2.3, the arrow leading into the square for subfigure (d) should
  read
 \end_layout
 
+\begin_deeper
 \begin_layout Quote
 
 \strikeout on
@@ -439,11 +528,12 @@ Multiple
  instruction
 \end_layout
 
+\end_deeper
 \begin_layout Subsection*
 Page 34
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 Multiple instruction, single data stream...
  is designed 
 \color green
@@ -452,7 +542,16 @@ to
  allow
 \color green
 
-\begin_inset space \textvisiblespace{}
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+textvisiblespace{}
+\end_layout
+
 \end_inset
 
 
@@ -464,44 +563,50 @@ multiple instructions to operate...
 Page 35
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 Figure 2.5
 \end_layout
 
-\begin_layout Standard
+\begin_deeper
+\begin_layout Quote
 The right parenthesis is missing for the call to sqrt in each task window.
  For Task n, the termination check in the outermost loop (over i) is incomplete.
 \end_layout
 
+\end_deeper
 \begin_layout Subsection*
 Page 37
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 DMA is most useful when the CPU cannot...
 \end_layout
 
-\begin_layout Standard
+\begin_deeper
+\begin_layout Quote
 DMA is used here without definition.
 \end_layout
 
+\end_deeper
 \begin_layout Subsection*
 Page 51
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 Today these multicore linear algebraic manipulations.
 \end_layout
 
-\begin_layout Standard
+\begin_deeper
+\begin_layout Quote
 This isn't a sentence.
 \end_layout
 
+\end_deeper
 \begin_layout Subsection*
 Page 61
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 It leverages functionality provided by hardware like hashing, ...
  classification, 
 \color green
@@ -514,7 +619,7 @@ and
 Page 63
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 For example, an eNodeB basestation has a...
  and 50 Mbps 
 \color green
@@ -527,10 +632,11 @@ uplink
 Page 70
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
 From the first table,
 \end_layout
 
+\begin_deeper
 \begin_layout Quote
 AMD quad core Opte
 \color green
@@ -539,11 +645,12 @@ r
 on
 \end_layout
 
+\end_deeper
 \begin_layout Subsection*
 Page 108
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 
 \family typewriter
 void VectorAddition(int restrict 
@@ -559,7 +666,7 @@ a, int *b
 Page 109
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 Below is an example of a doubly nested loop: 
 \family typewriter
 for (i=0; i<N; i++
@@ -571,7 +678,7 @@ for (i=0; i<N; i++
 )
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 Here is the same loop with the loop unrolled...
  
 \family typewriter
@@ -584,7 +691,7 @@ for(i=0; i<N; i++
 )
 \end_layout
 
-\begin_layout Quote
+\begin_layout Enumerate
 
 \family typewriter
 for(j=0; j<N; 
@@ -602,7 +709,7 @@ j+=2
 Page 165
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
 The communication types for MCAPI start out numbered, but then switch to
  being lettered.
  I think this is just an indentation typo.
