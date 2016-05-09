@@ -479,5 +479,661 @@ to think
  in terms of...
 \end_layout
 
+\begin_layout Subsection*
+Page 93
+\end_layout
+
+\begin_layout Enumerate
+
+\family typewriter
+n=n+1 ! for processo
+\strikeout on
+\color red
+e
+\strikeout default
+\color green
+r
+\color inherit
+ 1
+\end_layout
+
+\begin_layout Subsection*
+Page 94
+\end_layout
+
+\begin_layout Standard
+Both fibonacci examples are missing a closing brace.
+\end_layout
+
+\begin_layout Subsection*
+Page 95
+\end_layout
+
+\begin_layout Enumerate
+
+\family typewriter
+\color black
+#pragma omp 
+\color green
+parallel
+\color black
+ for
+\end_layout
+
+\begin_layout Subsection*
+Page 96
+\end_layout
+
+\begin_layout Enumerate
+
+\family typewriter
+#pragma 
+\color green
+omp
+\color inherit
+ parallel for shared(a,b), private(t)
+\end_layout
+
+\begin_layout Enumerate
+
+\family typewriter
+\color black
+#pragma 
+\color green
+omp
+\color black
+ parallel for reduction(+:s
+\strikeout on
+\color red
+um
+\strikeout default
+\color black
+)
+\end_layout
+
+\begin_layout Enumerate
+The simplest assignment uses round-robin...
+ where thread p get
+\color green
+s
+\color inherit
+ iterations...
+\end_layout
+
+\begin_layout Subsection*
+Page 97
+\end_layout
+
+\begin_layout Enumerate
+If I am processor 0
+\color green
+,
+\color inherit
+ do nothing
+\color green
+.
+\color green
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+textvisiblespace{}
+\end_layout
+
+\end_inset
+
+
+\strikeout on
+\color red
+o
+\strikeout default
+\color green
+O
+\color inherit
+therwise
+\color green
+,
+\color inherit
+ receive a
+\color green
+n
+\color inherit
+ 
+\strikeout on
+\color red
+y
+\strikeout default
+\color green
+x
+\color inherit
+ element from the left
+\color green
+,
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+textvisiblespace{}
+\end_layout
+
+\end_inset
+
+and
+\color inherit
+ add it to my 
+\strikeout on
+\color red
+x
+\strikeout default
+\color green
+y
+\color inherit
+ element.
+\end_layout
+
+\begin_layout Enumerate
+If I am the last processor
+\color green
+,
+\color inherit
+ do nothing
+\color green
+.
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+textvisiblespace{}
+\end_layout
+
+\end_inset
+
+
+\strikeout on
+\color red
+o
+\strikeout default
+\color green
+O
+\color inherit
+therwise
+\color green
+,
+\color inherit
+ send my 
+\strikeout on
+\color red
+y
+\strikeout default
+\color green
+x
+\color inherit
+ element ot the right.
+\end_layout
+
+\begin_layout Subsection*
+Page 98
+\end_layout
+
+\begin_layout Enumerate
+This is illustrated in figure 2.13 and you see...
+ that now the processor
+\color green
+s
+\color inherit
+ are activated right to left.
+\end_layout
+
+\begin_layout Subsection*
+Page 102
+\end_layout
+
+\begin_layout Standard
+All of the code snippets are missing a closing brace.
+\end_layout
+
+\begin_layout Subsection*
+Page 103
+\end_layout
+
+\begin_layout Enumerate
+
+\family typewriter
+/* some parameters omit
+\color green
+t
+\color inherit
+ed */
+\end_layout
+
+\begin_layout Enumerate
+The main issues that make MPI somewhat intricate to use
+\strikeout on
+\color red
+,
+\strikeout default
+\color inherit
+ are buffer management...
+\end_layout
+
+\begin_layout Subsection*
+Page 105
+\end_layout
+
+\begin_layout Enumerate
+Finally, MPI-2 has support for one-sided communication: one process put
+\color green
+s
+\color inherit
+ data into...
+\end_layout
+
+\begin_layout Subsection*
+Page 106
+\end_layout
+
+\begin_layout Enumerate
+It is clear what the transfer has to accomplsih: the a_local variable
+\strikeout on
+\color red
+s
+\strikeout default
+\color inherit
+ needs...
+\end_layout
+
+\begin_layout Enumerate
+...
+ and the right variable
+\strikeout on
+\color red
+s
+\strikeout default
+\color inherit
+ on the one with the...
+\end_layout
+
+\begin_layout Subsection*
+Page 107
+\end_layout
+
+\begin_layout Enumerate
+This one MPI process th
+\strikeout on
+\color red
+a
+\strikeout default
+\color green
+e
+\color inherit
+n uses OpenMP...
+ many threads 
+\strikeout on
+\color red
+are
+\strikeout default
+\color green
+as
+\color inherit
+ there are independent...
+\end_layout
+
+\begin_layout Enumerate
+The alternative would be to have an MPI process on each core or socket
+\strikeout on
+\color red
+,
+\strikeout default
+\color inherit
+ and do all communication...
+\end_layout
+
+\begin_layout Enumerate
+For instance, the performance of two processes now can 
+\color green
+be
+\color inherit
+ impeded by the need for...
+\end_layout
+
+\begin_layout Subsection*
+Page 108
+\end_layout
+
+\begin_layout Enumerate
+....
+ where operations such 
+\color green
+as
+\color inherit
+ addition of arrays can be expressed 
+\color green
+as
+\color inherit
+ 
+\family typewriter
+A=B+C
+\family default
+.
+\end_layout
+
+\begin_layout Subsection*
+Page 116
+\end_layout
+
+\begin_layout Enumerate
+
+\family typewriter
+Node 
+\strikeout on
+\color red
+*
+\strikeout default
+\color inherit
+nodes = (
+\strikeout on
+\color red
+n
+\strikeout default
+\color green
+N
+\color inherit
+ode)malloc( n_nodes*sizeof(struct _Node) );
+\end_layout
+
+\begin_deeper
+\begin_layout Quote
+
+\family typewriter
+Node
+\family default
+ is a 
+\family typewriter
+typedef
+\family default
+ for a 
+\family typewriter
+_Node*
+\family default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\family typewriter
+void shift(
+\strikeout on
+\color red
+n
+\strikeout default
+\color green
+N
+\color inherit
+ode the_point, 
+\strikeout on
+\color red
+v
+\strikeout default
+\color green
+V
+\color inherit
+ector by)
+\end_layout
+
+\begin_layout Subsection*
+Page 120
+\end_layout
+
+\begin_layout Enumerate
+While bisection width is a measure express
+\color green
+ed
+\color inherit
+ as a number of...
+\end_layout
+
+\begin_layout Enumerate
+To over
+\color green
+come
+\color inherit
+ this, we need to assume...
+\end_layout
+
+\begin_layout Subsection*
+Page 121
+\end_layout
+
+\begin_layout Enumerate
+communication between any two processors takes unit time, regardless 
+\color green
+of
+\color inherit
+ the number...
+\end_layout
+
+\begin_layout Enumerate
+A popular design for paralel computers...
+ three-dimensional 
+\shape italic
+\strikeout on
+\color red
+c
+\strikeout default
+\color green
+C
+\color black
+artesian mesh
+\shape default
+\color inherit
+.
+\end_layout
+
+\begin_layout Enumerate
+Critique the following argument: 
+\begin_inset Quotes eld
+\end_inset
+
+the amount 
+\color green
+of
+\color inherit
+ work per second...
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Page 122
+\end_layout
+
+\begin_layout Enumerate
+Some computer designs claim to be a grid...
+ but not all dimension
+\strikeout on
+\color red
+al
+\strikeout default
+\color green
+s
+\color inherit
+ are equal here.
+\end_layout
+
+\begin_layout Enumerate
+For instance
+\color green
+,
+\color inherit
+ a 3D grid where each...
+\end_layout
+
+\begin_layout Enumerate
+Above, we gave a hand-waving argument...
+ mesh-organized processors
+\strikeout on
+\color red
+,
+\strikeout default
+\color inherit
+ based on the prevalence...
+\end_layout
+
+\begin_layout Subsection*
+Page 123
+\end_layout
+
+\begin_layout Standard
+Figure 2.23 has been jammed behind Figure 2.24 in a layout mishap.
+\end_layout
+
+\begin_layout Subsection*
+Page 131
+\end_layout
+
+\begin_layout Enumerate
+Hence, a hierarchy of ever faster and smaller 
+\color green
+memories
+\color inherit
+ tries to keep...
+\end_layout
+
+\begin_deeper
+\begin_layout Quote
+I'm not sure this is the exact word the author would have used, but it fits
+ nicely.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Whenever a t
+\color green
+h
+\color inherit
+read would stall because...
+\end_layout
+
+\begin_layout Subsection*
+Page 135
+\end_layout
+
+\begin_layout Enumerate
+GPUs rely on 
+\color green
+a
+\color inherit
+ large amount of data parallelism...
+\end_layout
+
+\begin_layout Enumerate
+This discrepancy is likely to be addressed in fu
+\strikeout on
+\color red
+g
+\strikeout default
+\color green
+t
+\color inherit
+ure generations.
+\end_layout
+
+\begin_layout Subsection*
+Page 136
+\end_layout
+
+\begin_layout Enumerate
+...
+ in the case of the Xeon Phi because of the 8-
+\color green
+word
+\color inherit
+ wide AVX
+\color green
+2
+\color inherit
+ instructions.
+\end_layout
+
+\begin_layout Enumerate
+Both devices work, or can work, through offloading...
+\end_layout
+
+\begin_deeper
+\begin_layout Quote
+Offloading through OpenMP is discouraged in Knights Landing (it's the only
+ method available in Knights Corner).
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+Page 137
+\end_layout
+
+\begin_layout Enumerate
+Load need to be evenly distribut
+\strikeout on
+\color red
+ion
+\strikeout default
+\color green
+ed
+\color inherit
+.
+\end_layout
+
+\begin_layout Subsection*
+Page 438
+\end_layout
+
+\begin_layout Enumerate
+Source code management with SVN, 
+\strikeout on
+\color red
+Git
+\strikeout default
+\color green
+Mercurial
+\color inherit
+; see section 22.
+\end_layout
+
+\begin_deeper
+\begin_layout Quote
+Only Mercurial is discussed in section 22.
+ Although, in my personal opinion, a discussion of git would be of good
+ use in this book.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+Page 455
+\end_layout
+
+\begin_layout Enumerate
+As an example, consider this se
+\strikeout on
+\color red
+q
+\strikeout default
+\color green
+g
+\color inherit
+ment of MPI code:
+\end_layout
+
 \end_body
 \end_document
