@@ -1,0 +1,168 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 1cm
+\rightmargin 1cm
+\bottommargin 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Erratum for 
+\shape italic
+Discovering Modern C++
+\end_layout
+
+\begin_layout Author
+Tim Haines
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+e-mail:thaines.astro@gmail.com
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+Conventions used throughout: text to be 
+\strikeout on
+\color red
+removed
+\strikeout default
+\color inherit
+, 
+\series bold
+closely inspected
+\series default
+, and 
+\color green
+added
+\color inherit
+.
+\end_layout
+
+\begin_layout Subsection*
+Page 58
+\end_layout
+
+\begin_layout Standard
+It's a bit bizarre to see no mention of 
+\family typewriter
+std::array
+\family default
+ in a section on contiguous STL containers.
+ I greatly appreciate the discussion of 
+\family typewriter
+std::valarray
+\family default
+.
+ No one ever talks about it even though it is very powerful for 1D numerical
+ data manipulations.
+\end_layout
+
+\begin_layout Subsection*
+Page 63
+\end_layout
+
+\begin_layout Enumerate
+
+\family typewriter
+#en
+\color green
+d
+\color inherit
+if
+\end_layout
+
+\begin_deeper
+\begin_layout Quote
+This occurs three times in the 
+\begin_inset Quotes eld
+\end_inset
+
+Nestable Comments
+\begin_inset Quotes erd
+\end_inset
+
+ section.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+Page 75
+\end_layout
+
+\begin_layout Enumerate
+z4= 4
+\strikeout on
+\color red
+;
+\strikeout default
+\color inherit
+,
+\end_layout
+
+\end_body
+\end_document
