@@ -1,7 +1,9 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass article
 \use_default_options true
 \maintain_unincluded_children false
@@ -9,16 +11,16 @@
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
-
+\font_sf_scale 100 100
+\font_tt_scale 100 100
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -29,15 +31,24 @@
 \use_hyperref false
 \papersize default
 \use_geometry true
-\use_amsmath 1
-\use_esint 1
-\use_mhchem 1
-\use_mathdots 1
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
 \cite_engine basic
+\cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
+\justification true
 \use_refstyle 1
 \index Index
 \shortcut idx
@@ -65,9 +76,21 @@
 \begin_body
 
 \begin_layout Title
-Erratum for 
+Errata for 
 \shape italic
 Discovering Modern C++
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+
+\shape italic
+First edition; first printing
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Author
@@ -107,13 +130,12 @@ added
 Page 58
 \end_layout
 
-\begin_layout Standard
-It's a bit bizarre to see no mention of 
+\begin_layout Enumerate
+Is there a reason 
 \family typewriter
 std::array
 \family default
- in a section on contiguous STL containers.
- I greatly appreciate the discussion of 
+ isn't mentioned? I greatly appreciate the discussion of 
 \family typewriter
 std::valarray
 \family default
@@ -123,45 +145,375 @@ std::valarray
 \end_layout
 
 \begin_layout Subsection*
-Page 63
+Page 78
+\end_layout
+
+\begin_layout Enumerate
+Here, it is suggested to use 
+\family typewriter
+std::unique_ptr<double[]>
+\family default
+ to control the underlying data store.
+ However, the subsequent discussions of the 
+\family typewriter
+vector
+\family default
+ class do not use this (particularly on Page 85).
+ Was this meant just as an aside?
+\end_layout
+
+\begin_layout Subsection*
+
+\series bold
+Page 86
+\end_layout
+
+\begin_layout Enumerate
+The text suggests using 
+\family typewriter
+nullptr
+\family default
+ to signify the moved-from pointer, but the code uses the literal 0.
+ Making this change here would also make it consistent with the move-assignment
+ operator on Page 89.
+\end_layout
+
+\begin_layout Subsection*
+
+\series bold
+Page 120
+\end_layout
+
+\begin_layout Enumerate
+Here might be a good place to introduce inline namespaces.
+\end_layout
+
+\begin_layout Subsection*
+Page 127
 \end_layout
 
 \begin_layout Enumerate
 
 \family typewriter
-#en
+next(
+\strikeout on
+\color red
+0
+\strikeout default
 \color green
-d
+nullptr
 \color inherit
-if
+)
+\end_layout
+
+\begin_layout Enumerate
+
+\family typewriter
+first(
+\strikeout on
+\color red
+0
+\strikeout default
+\color green
+nullptr
+\color inherit
+)
+\end_layout
+
+\begin_layout Subsection*
+Page 130
+\end_layout
+
+\begin_layout Enumerate
+
+\family typewriter
+return list_iterator<T>(
+\strikeout on
+\color red
+0
+\strikeout default
+\color green
+nullptr
+\color inherit
+);
+\end_layout
+
+\begin_layout Subsection*
+Page 137
+\end_layout
+
+\begin_layout Enumerate
+
+\family typewriter
+template <
+\strikeout on
+\color red
+template
+\strikeout default
+\color green
+typename
+\color inherit
+ T1, 
+\strikeout on
+\color red
+template
+\strikeout default
+\color green
+typename
+\color inherit
+ T3>
+\end_layout
+
+\begin_layout Subsection*
+Page 158
+\end_layout
+
+\begin_layout Enumerate
+For 
+\family typewriter
+\strikeout on
+\color red
+ass
+\strikeout default
+\color green
+en
+\family default
+\color inherit
+suring that our matrix lives as long as the...
 \end_layout
 
 \begin_deeper
-\begin_layout Quote
-This occurs three times in the 
-\begin_inset Quotes eld
-\end_inset
-
-Nestable Comments
-\begin_inset Quotes erd
-\end_inset
-
- section.
+\begin_layout Enumerate
+This could be just an American vs British English usage.
 \end_layout
 
 \end_deeper
 \begin_layout Subsection*
-Page 75
+Page 188
 \end_layout
 
 \begin_layout Enumerate
-z4= 4
+The Mandelbrot set image is very dark and hard to see.
+\end_layout
+
+\begin_layout Subsection*
+Page 209
+\end_layout
+
+\begin_layout Enumerate
+They can 
+\color green
+be
+\color inherit
+ added, subtracted, and scaled (where meaningful).
+\end_layout
+
+\begin_layout Subsection*
+Page 216
+\end_layout
+
+\begin_layout Enumerate
+The Julia set image is very dark and hard to see.
+\end_layout
+
+\begin_layout Subsection*
+Page 236
+\end_layout
+
+\begin_layout Enumerate
+I wasn't able to find a definition of 
+\family typewriter
+Collection
+\family default
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\family typewriter
+is_const<Matrix>::
 \strikeout on
 \color red
-;
+type
+\strikeout default
+\color green
+value
+\end_layout
+
+\begin_layout Subsection*
+Page 237
+\end_layout
+
+\begin_layout Enumerate
+There are also slight differences...
+ and implicitly read its boolean value
+\strikeout on
+\color red
+ implicitly
 \strikeout default
 \color inherit
-,
+.
+\end_layout
+
+\begin_layout Enumerate
+Thus, types are by default declare
+\color green
+d
+\color inherit
+ as not being a matrix:
+\end_layout
+
+\begin_layout Subsection*
+Page 240
+\end_layout
+
+\begin_layout Enumerate
+
+\family typewriter
+r < num
+\strikeout on
+\color red
+cols
+\strikeout default
+\color green
+rows
+\color inherit
+(A)
+\end_layout
+
+\begin_layout Subsection*
+Page 244
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Quotes eld
+\end_inset
+
+In C++14, the variadic overload of minimum simplifies to
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+This seems to imply that 
+\family typewriter
+using U = T;
+\family default
+ is only available in C++14.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+Page 254
+\end_layout
+
+\begin_layout Enumerate
+
+\family typewriter
+template <typename 
+\strikeout on
+\color red
+Vector
+\strikeout default
+\color green
+U
+\color inherit
+> 
+\strikeout on
+\color red
+self
+\strikeout default
+\color green
+fsize_vector
+\color inherit
+& operator=(const 
+\strikeout on
+\color red
+self
+\strikeout default
+\color green
+fsize_vector<U>
+\color inherit
+& that)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+This should probably be SFINAEd such that U and T are convertible
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+Page 261
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Quotes eld
+\end_inset
+
+To use these SSE commands, the processed data must be aligned and contiguous
+ in memory and the compile must be aware of it.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+This is no longer true.
+ The unaligned instructions have been back-ported to SSE.
+ Gather and scatter instructions in AVX do no require contiguous data.
+ I agree that both should be true for optimal performance, however.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+5.4.2.2 Using Registers
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The opening paragraph here is a bit oversimplified (perhaps this was done
+ intentionally) as modern, directory-based coherency protocols are smart
+ enough to mark invalid lines in a single clock cycle.
+ Loading invalidated data, of course, incurs a severe penalty.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+Page 262
+\end_layout
+
+\begin_layout Enumerate
+The functor must be specialized for row 0 to avoid infinite 
+\strikeout on
+\color red
+loops
+\strikeout default
+\color green
+recursion
+\color inherit
+:
+\end_layout
+
+\begin_layout Subsection*
+Page 277
+\end_layout
+
+\begin_layout Enumerate
+Inconsistent use of 
+\family typewriter
+typedef
+\family default
+ and 
+\family typewriter
+using
+\family default
+ as on Page 244.
 \end_layout
 
 \end_body
