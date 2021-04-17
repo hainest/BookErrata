@@ -1,0 +1,292 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 1cm
+\rightmargin 1cm
+\bottommargin 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Corrigendum for 
+\shape italic
+C++17 STL Cookbook
+\shape default
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+First published June 2017.
+ Production reference 1230617
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Author
+Tim Haines
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+e-mail:thaines.astro@gmail.com
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+Conventions used throughout: text to be 
+\strikeout on
+\color red
+removed
+\strikeout default
+\color inherit
+, 
+\series bold
+closely inspected
+\series default
+, and 
+\color green
+added
+\color inherit
+.
+\end_layout
+
+\begin_layout Subsection*
+Page 
+\family typewriter
+79
+\end_layout
+
+\begin_layout Enumerate
+...
+ it must be something other than an 
+\strikeout on
+\color red
+operator
+\strikeout default
+\color green
+operand
+\end_layout
+
+\begin_layout Enumerate
+...
+ it can only be an 
+\strikeout on
+\color red
+operand
+\strikeout default
+\color green
+operator
+\color inherit
+.
+\end_layout
+
+\begin_layout Enumerate
+Now we get the 
+\strikeout on
+\color red
+operand
+\strikeout default
+\color green
+operator
+\end_layout
+
+\begin_layout Section*
+Page 105
+\end_layout
+
+\begin_layout Enumerate
+Whatever 
+\strikeout on
+\color red
+own
+\strikeout default
+\color inherit
+ container data structure we come up with...
+\end_layout
+
+\begin_layout Enumerate
+
+\family typewriter
+auto [min_it, max_it] 
+\color green
+=
+\color inherit
+ 
+\strikeout on
+\color red
+(
+\strikeout default
+\color inherit
+minmax_element(begin(r), end(r))
+\strikeout on
+\color red
+)
+\strikeout default
+\color inherit
+;
+\end_layout
+
+\begin_layout Subsection*
+Page 124
+\end_layout
+
+\begin_layout Enumerate
+Several words in the 
+\shape italic
+\emph on
+last
+\shape default
+\emph default
+ two sentences of item 7 are garbled.
+\end_layout
+
+\begin_layout Subsection*
+Page 235
+\end_layout
+
+\begin_layout Enumerate
+The Fourier transforms in the figure appear as just noise.
+\end_layout
+
+\begin_layout Subsection*
+Page 240
+\end_layout
+
+\begin_layout Enumerate
+
+\family typewriter
+return val
+\strikeout on
+\color red
+ue
+\strikeout default
+\color inherit
+;
+\end_layout
+
+\begin_layout Subsection*
+Page 407
+\end_layout
+
+\begin_layout Enumerate
+
+\family typewriter
+par_
+\strikeout on
+\color red
+vec
+\strikeout default
+\color green
+unseq
+\end_layout
+
+\begin_layout Subsection*
+Page 417
+\end_layout
+
+\begin_layout Enumerate
+If the computer has only one CPU core, then there can be a lot of threads
+ that run 
+\strikeout on
+\color red
+in parallel
+\strikeout default
+\color green
+concurrently
+\color inherit
+ but never 
+\strikeout on
+\color red
+concurrently
+\strikeout default
+\color green
+in parallel
+\color inherit
+ because...
+\end_layout
+
+\end_body
+\end_document
