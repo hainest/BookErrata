@@ -1,0 +1,457 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 1cm
+\rightmargin 1cm
+\bottommargin 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Corrigendum for 
+\shape italic
+Clean C++
+\end_layout
+
+\begin_layout Author
+Tim Haines
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+e-mail:thaines.astro@gmail.com
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+Conventions used throughout: text to be 
+\strikeout on
+\color red
+removed
+\strikeout default
+\color inherit
+, 
+\series bold
+closely inspected
+\series default
+, and 
+\color green
+added
+\color inherit
+.
+\end_layout
+
+\begin_layout Subsection*
+Page 64
+\end_layout
+
+\begin_layout Enumerate
+...
+ the compiler will check that the function is 
+\strikeout on
+\color red
+virtual and is
+\strikeout default
+\color inherit
+ overriding a virtual function from the base class.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Although a common usage, it is not required to mark the overriding function
+ as 
+\family typewriter
+virtual
+\family default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+Page 69
+\end_layout
+
+\begin_layout Enumerate
+
+\family typewriter
+return theVector;
+\family default
+ // Guaranteed no copy construction here!
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+This comment is correct as of C++17's guaranteed copy elision.
+ Prior to that, NRVO would be used by nearly every compiler- though it was
+ not guaranteed.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+Page 72
+\end_layout
+
+\begin_layout Enumerate
+As opposed to the setter on line 6, the member function 
+\family typewriter
+getRegistrationCode
+\family default
+ on line 5 cannot modify 
+\color green
+non-mutable
+\color inherit
+ member variables of class 
+\family typewriter
+Car
+\family default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+There weren't any member variables explicitly marked as 
+\family typewriter
+mutable
+\family default
+, but making this distinction here would be good.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\family typewriter
+std::string Car::getRegistrationCode() 
+\color green
+const
+\color inherit
+ {
+\end_layout
+
+\begin_layout Enumerate
+Well, C is still a subset of the C++ language.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+This is not true.
+ There are features in C that will never be part of C++ (e.g., zero-length
+ arrays)
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+Page 75
+\end_layout
+
+\begin_layout Enumerate
+std::to_
+\strikeout on
+\color red
+S
+\strikeout default
+\color green
+s
+\color inherit
+tring() [C++11]
+\end_layout
+
+\begin_layout Subsection*
+Page 81
+\end_layout
+
+\begin_layout Enumerate
+If an explicite
+\strikeout on
+\color red
+ly
+\strikeout default
+\color inherit
+ type conversion cannot be avoided...
+\end_layout
+
+\begin_layout Subsection*
+Page 97
+\end_layout
+
+\begin_layout Enumerate
+[Table 5-1] Only lvalues can be passed as parameters.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+This isn't true for the reference-to-const l-value forms.
+ Lifetime extension allows binding an r-value to a l-value reference to
+ const.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+Page 108
+\end_layout
+
+\begin_layout Enumerate
+
+\family typewriter
+\strikeout on
+\color red
+std::sqrt(std::pow(width, 2.0) + std::pow(height, 2.0))
+\strikeout default
+\color green
+std::hypot(width,height)
+\color inherit
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+A nice example of reinforcing the book's theme of 
+\shape italic
+Don't reinvent the wheel
+\shape default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+Page 130
+\end_layout
+
+\begin_layout Enumerate
+
+\family typewriter
+errorMessage += std::to
+\strikeout on
+\color red
+0
+\strikeout default
+\color inherit
+_string(dividend);
+\end_layout
+
+\begin_layout Subsection*
+Page 176
+\end_layout
+
+\begin_layout Enumerate
+
+\family typewriter
+std::transform(std::begin(numbers), std::end(numbers), std::begin(numbers),
+ ToSquare());
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+As of C++11, using a destination iterator which is contained in the input
+ sequence is undefined behavior for std::transform.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+Page 183
+\end_layout
+
+\begin_layout Enumerate
+An Immediately Invoked Lambda Expression (IILE) is used without any exposition
+ in the text.
+\end_layout
+
+\begin_layout Subsection*
+Page 237
+\end_layout
+
+\begin_layout Enumerate
+
+\family typewriter
+explicit WaitCommand(
+\strikeout on
+\color red
+const unsigned int
+\strikeout default
+\color green
+std::chrono::milliseconds
+\family default
+\color inherit
+ ...
+\end_layout
+
+\begin_layout Subsection*
+Comments
+\end_layout
+
+\begin_layout Enumerate
+Page 74: On the other hand, there are string constants, that is, immutable
+ strings.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+With the addition of 
+\family typewriter
+std::string_view
+\family default
+ in C++17, even this usage of C-strings becomes unneeded.
+ They may never go away, but the hope is to replace their usage with something
+ more type- and memory-safe.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Adding a discussion of policy classes to Chapter 6 would greatly benefit
+ the reader.
+\end_layout
+
+\begin_layout Enumerate
+Page 166
+\end_layout
+
+\begin_deeper
+\begin_layout Quote
+Of course, C++ is not a pure object-oriented programming language like Java
+ or C#, and it is basically not forbidden to write procedural code in C++.
+ But when you want to do that, you should be honest to yourself and consequently
+ use simple free-standing procedures, respectively functions, global variables,
+ and namespaces.
+\end_layout
+
+\begin_layout Enumerate
+The methods taught by C++ didacts today recommend a blend of OO and procedural
+ code such that strong types represent domain elements, but that not every
+ action which can be performed 
+\shape italic
+on
+\shape default
+ a type should be performed 
+\shape italic
+by
+\shape default
+ that type.
+ Global variables are evil- even in procedural code.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Adding a discussion of currying to Chapter 7 would be great as it's not
+ often discussed.
+ Admittedly, this is best done in C++14, but it can be done in C++11 with
+ judicious use of std::function.
+\end_layout
+
+\begin_layout Enumerate
+Page 187: A discussion of std::reduce from C++17 would be a good addition
+ here.
+\end_layout
+
+\begin_layout Enumerate
+Page 246: The 
+\family typewriter
+IsEqualTo
+\family default
+ class isn't idiomatic C++.
+ Defining a non-member 
+\family typewriter
+operator==
+\family default
+ for 
+\family typewriter
+ObserverPtr
+\family default
+ and then using 
+\family typewriter
+std::equal_to
+\family default
+ in the call to 
+\family typewriter
+std::find_if
+\family default
+ would be recommended.
+\end_layout
+
+\begin_layout Enumerate
+Page 260: A third option would be to use 
+\family typewriter
+if(optionalCustomer)
+\family default
+.
+\end_layout
+
+\end_body
+\end_document
